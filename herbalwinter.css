@@ -1,117 +1,105 @@
 /* Username Colour Presets (do not edit) */
-[class^="chat-msg-a"] .username, [class^="chat-msg-A"] .username {
-    color: #6635d8;
+[class^="chat-msg-a"] .username, [class^="chat-msg-B"] .username {
+    color: #e45959;
 }
 
-[class^="chat-msg-b"] .username {
-    color: #7a1ad0;
+[class^="chat-msg-b"] .username, [class^="chat-msg-C"] .username {
+    color: #006b26;
 }
 
-[class^="chat-msg-c"] .username {
-    color: #a585c1;
+[class^="chat-msg-c"] .username, [class^="chat-msg-D"] .username {
+    color: #d95f84;
 }
 
-[class^="chat-msg-d"] .username {
-    color: #1ab8d0;
+[class^="chat-msg-d"] .username, [class^="chat-msg-E"] .username {
+    color: #1ad084;
 }
 
-[class^="chat-msg-e"] .username {
+[class^="chat-msg-e"] .username, [class^="chat-msg-F"] .username {
     color: #aeeabc;
 }
 
-[class^="chat-msg-f"] .username {
+[class^="chat-msg-f"] .username, [class^="chat-msg-G"] .username {
     color: #2bcb88;
 }
 
-[class^="chat-msg-g"] .username {
+[class^="chat-msg-g"] .username, [class^="chat-msg-H"] .username {
     color: #96355a;
 }
 
-[class^="chat-msg-h"] .username {
-    color: #1aa0d0;
+[class^="chat-msg-h"] .username, [class^="chat-msg-I"] .username {
+    color: #ab2d4d;
 }
 
-[class^="chat-msg-i"] .username {
+[class^="chat-msg-i"] .username, [class^="chat-msg-J"] .username {
     color: #d5cc28;
 }
 
-[class^="chat-msg-j"] .username {
-    color: #4408d1;
+[class^="chat-msg-j"] .username, [class^="chat-msg-K"] .username {
+    color: #8c362e;
 }
 
-[class^="chat-msg-k"] .username {
-    color: #7055ec;
+[class^="chat-msg-k"] .username, [class^="chat-msg-L"] .username {
+    color: #178232;
 }
 
-[class^="chat-msg-l"] .username {
+[class^="chat-msg-l"] .username, [class^="chat-msg-M"] .username {
     color: #facef1;
 }
 
-[class^="chat-msg-m"] .username, [class^="chat-msg-M"] .username {
-    color: #6eecff;
+[class^="chat-msg-m"] .username, [class^="chat-msg-N"] .username {
+    color: #cfc91a;
 }
 
-[class^="chat-msg-n"] .username {
+[class^="chat-msg-n"] .username, [class^="chat-msg-O"] .username {
     color: #58aa00;
 }
 
-[class^="chat-msg-nonaboo"] .username {
-    color: #683e6b;
-}
-
-[class^="chat-msg-nonacow"] .username {
-    color: #1b5211;
-}
-
-[class^="chat-msg-nonn"] .username {
-    color: #6a5b7a;
-}
-
-[class^="chat-msg-o"] .username {
+[class^="chat-msg-o"] .username, [class^="chat-msg-P"] .username {
     color: #549178;
 }
 
-[class^="chat-msg-p"] .username {
+[class^="chat-msg-p"] .username, [class^="chat-msg-Q"] .username {
     color: #d06a91;
 }
 
-[class^="chat-msg-q"] .username {
-    color: #7b8b91;
+[class^="chat-msg-q"] .username, [class^="chat-msg-R"] .username {
+    color: #8f4242;
 }
 
-[class^="chat-msg-r"] .username {
-    color: #689699;
+[class^="chat-msg-r"] .username, [class^="chat-msg-S"] .username {
+    color: #d8db72;
 }
 
-[class^="chat-msg-s"] .username {
+[class^="chat-msg-s"] .username, [class^="chat-msg-T"] .username {
     color: #87a71e;
 }
 
-[class^="chat-msg-t"] .username {
-    color: #f09244;
+[class^="chat-msg-t"] .username, [class^="chat-msg-U"] .username {
+    color: #f07844;
 }
 
-[class^="chat-msg-u"] .username {
+[class^="chat-msg-u"] .username, [class^="chat-msg-V"] .username {
     color: #66c49a;
 }
 
-[class^="chat-msg-v"] .username {
+[class^="chat-msg-v"] .username, [class^="chat-msg-W"] .username {
     color: #a7731e;
 }
 
-[class^="chat-msg-w"] .username {
+[class^="chat-msg-w"] .username, [class^="chat-msg-X"] .username {
     color: #cd8676;
 }
 
-[class^="chat-msg-x"] .username {
-    color: #a584e6;
+[class^="chat-msg-x"] .username, [class^="chat-msg-Y"] .username {
+    color: #651010;
 }
 
-[class^="chat-msg-y"] .username {
+[class^="chat-msg-y"] .username, [class^="chat-msg-Z"] .username {
     color: #ae6b6b;
 }
 
-[class^="chat-msg-z"] .username {
+[class^="chat-msg-z"] .username, [class^="chat-msg-A"] .username {
     color: #905b2f;
 }
 
@@ -129,7 +117,7 @@
 }
 
 .chat-msg-Patchyy .username, .chat-msg-Patchyyy .username {
-    color: #3b35756;
+    color: #3b3575;
 }
 
 .chat-msg-SpringtimeTea .username, .chat-msg-Springtimetea .username, .chat-msg-Springteatime .username {
@@ -142,6 +130,14 @@
 
 .chat-msg-nonnabella2 .username, .chat-msg-Nonnabella .username, .chat-msg-nonnabella .username {
     color: #c99d2c;
+}
+
+[class^="chat-msg-nonaboo"] .username {
+  color: #683e6b;
+}
+
+[class^="chat-msg-nonacow"] .username {
+  color: #1b5211;
 }
 
 .chat-msg-nonnatella .username, .chat-msg-Nonnatella .username, .chat-msg-nonatella .username, .chat-msg-Nonatella .username, .chat-msg-nonatella2 .username, .chat-msg-Nonatella2 .username {
@@ -660,6 +656,11 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* SNOW! */ 
+.snowcontain {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+}
 .snow {
     position: absolute;
     width: 10px;
