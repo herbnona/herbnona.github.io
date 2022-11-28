@@ -654,6 +654,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/* mobile only styles */
+@media only screen and (max-width: 768px) {
+  .nowshowing, .comingsoon {
+    /* hide now showing and coming soon sections on mobile */
+    display: none;
+  }
+}
+
 
 /* SNOW! */ 
 .snowbutton {
