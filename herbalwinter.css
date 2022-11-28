@@ -656,6 +656,9 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* SNOW! */ 
+.snowbutton {
+  float: right;
+}
 .snowcontain {
   position: fixed;
   height: 100vh;
