@@ -339,6 +339,7 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: none;
     text-transform: lowercase;
 }
+
 .btn:hover, .btn:focus {
     background: #BF4A4E !important;
     border-color: #000;
@@ -359,6 +360,7 @@ h1, h2, h3, h4, h5, h6 {
     outline: none;
     text-shadow: none;
 }
+
 .btn-danger.disabled, .btn-danger.disabled.active, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled:focus, .btn-danger.disabled:hover, .btn-danger[disabled], .btn-danger[disabled].active, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled]:focus, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger.active, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:hover {
     background: #ccc !important;
     font-size: 12px;
@@ -414,6 +416,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 #emotelistbtn::before {
     content: '\2765\0020';
+}
+.nick-highlight {
+  background-color: rgba(255,255,255,.1);
 }
 
 /* User Pane */
@@ -610,12 +615,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Emote Overrides */
-.channel-emote[title~="jesusfag"] {
-    max-width: 200px;
+.channel-emote[title~="jesusfag"], .channel-emote[title~="thegirlsarefighting"] {
+  max-width: 200px;
 }
 
-.channel-emote[title~="deadly"], .channel-emote[title~="i will kill you"], .channel-emote[title~="bustintotears"], .channel-emote[title~="flamestory"], .channel-emote[title~="disappointed*"], .channel-emote[title~="femalegaze"], .channel-emote[title~="girlz rule"], .channel-emote[title~="pinkpilled"], .channel-emote[title~="retardina"], .channel-emote[title~="smelly bitch"], .channel-emote[title~="triggered"], .channel-emote[title~="keepclutchin"], .channel-emote[title~="happyhalloween1"]{
-    max-width: 200px;
+.channel-emote[title~="deadly"], .channel-emote[title~="happybirthday4"], .channel-emote[title~="i will kill you"], .channel-emote[title~="bustintotears"], .channel-emote[title~="flamestory"], .channel-emote[title~="disappointed*"], .channel-emote[title~="femalegaze"], .channel-emote[title~="girlz rule"], .channel-emote[title~="pinkpilled"], .channel-emote[title~="retardina"], .channel-emote[title~="smelly bitch"], .channel-emote[title~="triggered"], .channel-emote[title~="keepclutchin"], .channel-emote[title~="happyhalloween1"], .channel-emote[title~="wooshshrimp"] {
+  max-width: 150px;
 }
 
 /* Emote List */
