@@ -5,7 +5,7 @@ const Confettiful = function (el) {
   this.containerEl = null;
   this.confettiFrequency = 3;
   this.confettiColors = ['#fce18a', '#ff726d', '#b48def', '#f4306d'];
-  this.confettiAnimations = ['slow', 'slow', 'medium'];
+  this.confettiAnimations = ['slow', 'medium', 'fast'];
   this._setupElements();
   this._renderConfetti();
 };
