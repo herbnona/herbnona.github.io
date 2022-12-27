@@ -29,7 +29,7 @@ Confettiful.prototype._renderConfetti = function () {
     confettiEl.style.backgroundColor = confettiBackground;
     confettiEl.removeTimeout = setTimeout(function () {
       confettiEl.parentNode.removeChild(confettiEl);
-    }, 3000);
+    }, 5000);
     this.containerEl.appendChild(confettiEl);
   }, 25);
 };
