@@ -11,10 +11,6 @@ const Confettiful = function (el) {
 };
 Confettiful.prototype._setupElements = function () {
   const containerEl = document.createElement('div');
-  const elPosition = this.el.style.position;
-  if (elPosition !== 'relative' || elPosition !== 'absolute') {
-    this.el.style.position = 'relative';
-  }
   containerEl.classList.add('confetti-container');
   this.el.appendChild(containerEl);
   this.containerEl = containerEl;
