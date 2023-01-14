@@ -318,7 +318,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .glyphicon-time {
-    color: #181411;
+    color: #fff;
     padding-right: 2px;
 }
 
