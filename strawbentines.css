@@ -1,8 +1,3 @@
-/* Special Username */
-.Raggamuffin .userlist_op::before {
-  content: '\02741\0020';
-}
-
 /* Emote Overrides */
 .channel-emote[title~="jesusfag"], .channel-emote[title~="thegirlsarefighting"] {
   max-width: 200px;
@@ -22,7 +17,7 @@
 ** #63B0CD - maximum blue - buttons
 ** #C96480 - cinnamon satin - control buttons 
 ** #87D68D - granny smith apple - reconnect, button hovers, and default username
-** #191516 - modal text
+** #191516 - eerie black - modal text
 ** #711e37 - claret - transparent backgrounds
 ** #49111C - dark sienna - borders and text on light bg
 */
@@ -36,7 +31,7 @@
 }
 
 body {
-  background: url('https://i.postimg.cc/MG9SVM9Q/strawbrepeat.webp');
+  background: url('https://i.postimg.cc/MG9SVM9Q/strawbrepeat.webp') #F9DBEA;
   cursor: url('https://i.postimg.cc/Fzh1Sb14/cowcursorny.gif'), auto;
 }
 
@@ -420,6 +415,26 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
   text-shadow: none;
 }
 
+/* YT Search */
+#library .queue_entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#library .btn {
+  margin: 0 10px 0 0;
+}
+
+#library .qe_title {
+  padding: 10px;
+}
+
+#library .qe_time {
+  flex-grow: 2;
+  text-align: right;
+}
+
 /* Guest Login */
 #guestlogin .input-group-addon {
   min-width: 120px;
@@ -578,15 +593,6 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
   background-color: #711e37ed
-}
-
-/* Emote Overrides */
-.channel-emote[title~="jesusfag"] {
-  max-width: 200px;
-}
-
-.channel-emote[title~="deadly"], .channel-emote[title~="i will kill you"], .channel-emote[title~="bustintotears"], .channel-emote[title~="flamestory"], .channel-emote[title~="disappointed*"], .channel-emote[title~="femalegaze"], .channel-emote[title~="girlz rule"], .channel-emote[title~="pinkpilled"], .channel-emote[title~="retardina"], .channel-emote[title~="smelly bitch"], .channel-emote[title~="triggered"], .channel-emote[title~="keepclutchin"], .channel-emote[title~="happyhalloween1"]{
-  max-width: 200px;
 }
 
 /* Emote List */
