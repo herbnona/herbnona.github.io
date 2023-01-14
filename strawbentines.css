@@ -539,6 +539,10 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
   opacity: .4;
 }
 
+.modal-body {
+  color: #191516;
+}
+
 .modal-body input.form-control[type="text"] {
   background-color: #973551c2 !important;
   border-radius: 0;
