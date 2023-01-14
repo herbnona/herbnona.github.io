@@ -643,7 +643,6 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .heartbutton {
   float: right;
-  margin-right: 5px !important;
 }
 
 #hearts {
