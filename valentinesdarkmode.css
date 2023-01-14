@@ -286,7 +286,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_op {
-    color: #8171BF !important;
+    color: #F9DBEA !important;
 }
 
 .userlist_owner::before {
@@ -295,6 +295,14 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 .userlist_op::before {
     content: '\0273F\0020';
+}
+
+.userlist_guest {
+    color: #fff !important;
+}
+
+.server-whisper {
+    color: #eee;
 }
 
 .profile-box, .user-dropdown {
