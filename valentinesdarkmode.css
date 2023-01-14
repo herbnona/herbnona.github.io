@@ -641,10 +641,16 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 /* Hearts! */
+.modebutton {
+    float: right;
+    margin-right: 5px !important;
+}
+
 .heartbutton {
     float: right;
     margin-right: 5px !important;
 }
+
 #hearts {
     position: fixed;
     top: 0;
