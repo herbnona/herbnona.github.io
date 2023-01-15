@@ -10,6 +10,11 @@
 ** #0F5257 - midnight green eagle green - control buttons and reconnect
 */
 
+/* Hide items from seasonal themes */
+.effect {
+  display: none;
+}
+
 /* Main Styles */
 @keyframes swing {
   0%, 100% { transform: rotate(-10deg); }

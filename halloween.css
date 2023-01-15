@@ -11,6 +11,11 @@
 ** #6E75A8 - dark blue grey - control buttons
 */
 
+/* Hide items from seasonal themes */
+.effect {
+    display: none;
+}
+
 /* Main Styles */
 @keyframes swing {
     0%, 100% { transform: rotate(-10deg); }

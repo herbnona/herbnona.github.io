@@ -11,6 +11,11 @@
 ** #121C17 - dark jungle green - heading sections and active in queue
 */
 
+/* Hide items from seasonal themes */
+.effect {
+  display: none;
+}
+
  /* Main Styles */
 @keyframes swing {
     0%, 100% { transform: rotate(-10deg); }
