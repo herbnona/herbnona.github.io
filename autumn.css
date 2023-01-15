@@ -1,0 +1,662 @@
+/* Username Colour Presets (do not edit) */
+[class^="chat-msg-a"] .username, [class^="chat-msg-A"] .username {
+    color: #6635d8;
+}
+
+[class^="chat-msg-b"] .username {
+    color: #7a1ad0;
+}
+
+[class^="chat-msg-c"] .username {
+    color: #a585c1;
+}
+
+[class^="chat-msg-d"] .username {
+    color: #1ab8d0;
+}
+
+[class^="chat-msg-e"] .username {
+    color: #aeeabc;
+}
+
+[class^="chat-msg-f"] .username {
+    color: #2bcb88;
+}
+
+[class^="chat-msg-g"] .username {
+    color: #96355a;
+}
+
+[class^="chat-msg-h"] .username {
+    color: #1aa0d0;
+}
+
+[class^="chat-msg-i"] .username {
+    color: #d5cc28;
+}
+
+[class^="chat-msg-j"] .username {
+    color: #4408d1;
+}
+
+[class^="chat-msg-k"] .username {
+    color: #7055ec;
+}
+
+[class^="chat-msg-l"] .username {
+    color: #facef1;
+}
+
+[class^="chat-msg-m"] .username, [class^="chat-msg-M"] .username {
+    color: #6eecff;
+}
+
+[class^="chat-msg-n"] .username {
+    color: #58aa00;
+}
+
+[class^="chat-msg-nonaboo"] .username {
+    color: #683e6b;
+}
+
+[class^="chat-msg-nonacow"] .username {
+    color: #1b5211;
+}
+
+[class^="chat-msg-nonn"] .username {
+    color: #6a5b7a;
+}
+
+[class^="chat-msg-o"] .username {
+    color: #549178;
+}
+
+[class^="chat-msg-p"] .username {
+    color: #d06a91;
+}
+
+[class^="chat-msg-q"] .username {
+    color: #7b8b91;
+}
+
+[class^="chat-msg-r"] .username {
+    color: #689699;
+}
+
+[class^="chat-msg-s"] .username {
+    color: #87a71e;
+}
+
+[class^="chat-msg-t"] .username {
+    color: #f09244;
+}
+
+[class^="chat-msg-u"] .username {
+    color: #66c49a;
+}
+
+[class^="chat-msg-v"] .username {
+    color: #a7731e;
+}
+
+[class^="chat-msg-w"] .username {
+    color: #cd8676;
+}
+
+[class^="chat-msg-x"] .username {
+    color: #a584e6;
+}
+
+[class^="chat-msg-y"] .username {
+    color: #ae6b6b;
+}
+
+[class^="chat-msg-z"] .username {
+    color: #905b2f;
+}
+
+/* Username Colours - edit to assign a specific colour to a nonnie */
+.chat-msg-herbnona .username {
+    color: #13665A;
+}
+
+.chat-msg-nonnie123 .username {
+    color: #444471;
+}
+
+.chat-msg-tomatonon .username {
+    color: #FF6347;
+}
+
+.chat-msg-Patchyy .username, .chat-msg-Patchyyy .username {
+    color: #3b35756;
+}
+
+.chat-msg-SpringtimeTea .username, .chat-msg-Springtimetea .username, .chat-msg-Springteatime .username {
+    color: #78E928;
+}
+
+.chat-msg-Nonnie69420 .username, .chat-msg-Nonnie69420vol2 .username {
+    color: #9ee49c;
+}
+
+.chat-msg-nonnabella2 .username, .chat-msg-Nonnabella .username, .chat-msg-nonnabella .username {
+    color: #c99d2c;
+}
+
+.chat-msg-nonnatella .username, .chat-msg-Nonnatella .username, .chat-msg-nonatella .username, .chat-msg-Nonatella .username, .chat-msg-nonatella2 .username, .chat-msg-Nonatella2 .username {
+    color: #f96e4b;
+}
+
+.chat-msg-Noprabonna .username {
+    color: #C8A2C8;
+}
+
+.chat-msg-toastanon .username {
+    color: #903206;
+}
+
+.chat-msg-noobna .username, .chat-msg-maito .username {
+    color: #55e8f5;
+}
+
+.chat-msg-kekoslavia .username {
+    color: #fee44b;
+}
+
+.chat-msg-nona_love .username {
+    color: #E86FC0;
+}
+
+.chat-msg-chericat .username {
+    color: #EE421C;
+}
+
+.chat-msg-al-anon .username {
+    color: #A11F76;
+}
+
+.chat-msg-Kekk .username {
+    color: #F32167;
+}
+
+.chat-msg-Raggamuffin .username {
+    color: #632309;
+}
+
+.chat-msg-Myleghurts .username {
+    color: #912c65;
+}
+
+.chat-msg-keep .username {
+    color: #5e6b32;
+}
+
+.chat-msg-Bananababby .username, .chat-msg-bananoon .username {
+    color: #faefaa;
+}
+
+.chat-msg-shrimppp .username {
+    color: #d5718f;
+}
+
+.chat-msg-nonaroll .username {
+    color: #d19a6a;
+}
+
+.chat-msg-gertrude .username {
+    color: #249f78;
+}
+
+.chat-msg-dabberdoo .username {
+    color: #995626;
+}
+
+.chat-msg-chocula .username {
+    color: #522f21;
+}
+
+.chat-msg-imogen__ .username, .chat-msg-YiggityDiggity .username {
+    color: #900831;
+}
+
+.chat-msg-chxrrycola .username{
+    color: #B03A2E;
+}
+
+.chat-msg-knckrn4kjnfr4 .username{
+    color: #303973;
+}
+
+.chat-msg-FairiesWearBoots .username, .chat-msg-amazeballs .username  {
+    color: #a156ae;
+}
+
+.chat-msg-rach9 .username, .chat-msg-moon6 .username, .chat-msg-moon7 .username, .chat-msg-megam7 .username {
+    color: #7360bd;
+}
+
+.chat-msg-NadianNonna .username {
+    color: #95c18a;
+}
+
+.chat-msg-pynk .username {
+    color: #D2436C;
+}
+
+.chat-msg-nonnerooni .username {
+    color: #e33d69;
+}
+
+
+.chat-msg-xXnoonieXx .username {
+    color: #bada55;
+}
+
+.Raggamuffin .userlist_op::before {
+    content: '\02741\0020';
+}
+
+/** Current Theme: Moomin Autumn **/
+/** lovingly crafted by herbnona **/
+
+/* Colour Palette 
+** #503F4F - eggplant - background, emote popup
+** #DE632B - flame  - notifs and disconnect
+** #FFF7D6 - cornsilk - chat text
+** #FFF3C2 - blond - pane text
+** #FF6933 - orange crayola - buttons
+** #053225 - dark green - control buttons and reconnect
+*/
+
+ /* Main Styles */
+@keyframes swing {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+body {
+    background: url('https://i.postimg.cc/fytDx9gd/Moomin-RED.png');
+    cursor: url('https://lolcow.farm/m/src/1657729461153.png'), auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: none;
+}
+
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
+    color: #FFF3C2;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    background: #503F4F;
+}
+
+.channel-emote {
+    max-width: 90px;
+    max-height: 90px;
+}
+
+.navbar-inverse {
+    background: rgba(0,0,0,.8) !important;
+ }
+
+#motdwrap {
+    background: rgba(0,0,0,.5);
+}
+
+#chatheader, #videowrap-header {
+    border: 1px solid #111;
+    border-bottom-width: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 8px;
+    background: rgba(50,50,50,.5);
+    color: #FFF3C2;
+}
+
+#userlist, #messagebuffer {
+    border: 1px solid #111;
+}
+
+#footer {
+    background: rgba(0,0,0,.6) !important;
+}
+
+/* Buttons */
+#leftcontrols .btn {
+    margin-right: 1em;
+}
+.btn {
+    background: #FF6933 !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    margin: 0 .75em 0 0;
+    padding: 0.2em 0.3em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-shadow: none;
+    text-transform: lowercase;
+}
+.btn:hover, .btn:focus {
+    background: #FF6933 !important;
+    border-color: #000;
+    color: #000;
+    box-shadow: 0px 0px 0px 0px, 0px 0px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 3px 3px 0px 0px;
+    top: 1px;
+    left: 2px;
+    text-shadow: none;
+}
+  
+.btn:active, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    background: #FF6933 !important;
+    border-color: #000;
+    color: #000;
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+    outline: none;
+    text-shadow: none;
+}
+.btn-danger.disabled, .btn-danger.disabled.active, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled:focus, .btn-danger.disabled:hover, .btn-danger[disabled], .btn-danger[disabled].active, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled]:focus, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger.active, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:hover {
+    background: #ccc !important;
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid #000 !important;
+    margin: 0 .75em 0 0;
+    padding: 0.2em 0.3em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-shadow: none;
+    text-transform: lowercase;
+}
+
+.btn-info[disabled] {
+    border-color: #111;
+}
+  
+@media (min-width: 768px) {
+    .btn, .btn-danger.disabled, .btn-danger.disabled.active, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled:focus, .btn-danger.disabled:hover, .btn-danger[disabled], .btn-danger[disabled].active, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled]:focus, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger.active, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger:hover {
+        padding: 0.25em 0.5em;
+    }
+}
+
+/* Chat Section */
+#chatheader .label-default {
+    background: rgba(0,0,0,.5);
+}
+.timestamp {
+    color: #a7a6ba;
+}
+.username {
+    color: #FF6933;
+}
+#messagebuffer {
+    background: rgba(0,0,0,.4);
+    color: #FFF7D6;
+}
+.nick-hover {
+    background: rgba(0,0,0,.2);
+}
+#chatline {
+    background: rgba(0,0,0,.6) !important;
+    border-color:rgba(0,0,0,.8);
+}
+#newpollbtn::before {
+    content: '\2713\0020';
+}
+#emotelistbtn::before {
+    content: '\2765\0020';
+}
+
+/* User Pane */
+#userlist {
+    background: rgba(0,0,0,.3)
+}
+.userlist_owner {
+    color: #FFF7D6 !important;
+}
+.userlist_op {
+    color: #8171BF !important;
+}
+.userlist_owner::before {
+    content: '\02764\0020';
+}
+.userlist_op::before {
+    content: '\0273F\0020';
+}
+
+/* Video Section */ 
+.queue_entry {
+    background: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.8);
+}
+
+.queue_entry a {
+    color: #FFF7D6;
+}
+
+.queue_entry.queue_active {
+    background: rgba(255,255,255,.1);
+}
+
+.videolist {
+    color: #FFF3C2;
+}
+
+#queue_next::before {
+    content: '\27B9\0020';
+}
+
+#queue_end::before {
+    content: '\27B7\0020';
+}
+
+.videolist .btn {
+    font-size: 10px;
+    border-radius: 0px;
+    border: 0px;
+    background: #053225  !important;
+    box-shadow: 0px 0px 0px;
+    color: #fff;
+}
+
+.videolist .btn:hover, .videolist .btn:focus {
+    background: #053225  !important;
+    border-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 0px;
+    top: 1px;
+    left: 2px;
+}  
+
+.videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
+    background: #053225  !important;
+    border-color: #000;
+    color: #fff;
+    box-shadow: 0px 0px 0px 0px;
+    top: 1px;
+    left: 1px;
+    outline: none;
+}
+
+#rightpane-inner input.form-control[type="text"] {
+    background-color: rgba(0,0,0,.6) !important;
+    border-radius: 0;
+    border-color: rgba(0,0,0,.8);
+    color: rgba(225,225,225,.8);
+    width: 98%;
+}
+
+#plmeta {
+    border-color: rgba(0,0,0,.8);
+    color: rgba(225,225,225,.8)
+}
+
+/* Guest Login */
+#guestlogin .input-group-addon {
+    min-width: 120px;
+    background: rgba(0,0,0,.8);
+    text-transform: lowercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+#guestlogin > input {
+    border-color: rgba(0,0,0,.8);
+}
+
+/* Polls */
+.poll-notify {
+    color: #DE632B;
+}
+
+#pollwrap .well {
+    background: rgba(0,0,0,.1);
+    color: #FFF3C2;
+}
+
+#pollwrap .close {
+    text-shadow: none;
+    opacity: 1;
+    font-size: 30px;
+    padding: 0 0 0 10px;
+}
+
+#pollwrap .label-default {
+    background: rgba(0,0,0,.5);
+}
+
+/* Server Messages */
+.server-msg-reconnect {
+    border-color: #053225 ;
+    color: #053225 ;
+}
+
+.server-msg-disconnect {
+    border-color: #DE632B;
+    color: #DE632B;
+}
+
+/* Modals */
+.modal-content {
+    color: #000;
+    background: #503F4F;
+    border-radius: 0;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    text-shadow: none;
+    text-transform: lowercase;
+}
+
+.modal-header {
+    color: #FFF3C2;
+}
+
+.modal-header .close {
+    text-shadow: none;
+    opacity: .4;
+}
+
+.modal-body input.form-control[type="text"] {
+    background-color: rgba(0,0,0,.5) !important;
+    border-radius: 0;
+}
+
+.modal-body .pagination {
+    border-radius: 0;
+    background: #FF6933;
+    text-shadow: none;
+}
+
+.modal-body .pagination>li>a, .modal-body .pagination>li>span {
+    background: #FF6933;
+    letter-spacing: 2px;
+    font-size: 12px;
+    color: #000;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+.modal-body .pagination>li.disabled>a, .modal-body .pagination>li.disabled>a:hover, .modal-body .pagination>li.disabled>span, .modal-body .pagination>li.disabled>span:hover {
+    background: rgba(0,0,0,.3);
+    color: #111;
+}
+
+.pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
+    border-radius: 0;
+}
+
+.emotelist-paginator-container {
+    clear: both;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover, .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: rgba(0,0,0,.4);
+}
+
+.dropdown-menu {
+    background-color: rgba(0,0,0,.8);
+}
+
+/* Emote Overrides */
+.channel-emote[title~="jesusfag"] {
+    max-width: 200px;
+}
+
+.channel-emote[title~="deadly"], .channel-emote[title~="i will kill you"], .channel-emote[title~="bustintotears"], .channel-emote[title~="flamestory"], .channel-emote[title~="disappointed*"], .channel-emote[title~="femalegaze"], .channel-emote[title~="girlz rule"], .channel-emote[title~="pinkpilled"], .channel-emote[title~="retardina"], .channel-emote[title~="smelly bitch"], .channel-emote[title~="triggered"], .channel-emote[title~="keepclutchin"], .channel-emote[title~="happyhalloween1"]{
+    max-width: 200px;
+}
+
+/* Emote List */
+.emotelist-table {
+    background: rgba(0,0,0,.6); 
+}
+
+.emotelist-table td {
+    background: rgba(0,0,0,.6); 
+}
+
+/* Image Popup */
+#image-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: transparent;
+    height: 100vh;
+    width: 100vw;
+    opacity:0;
+    transition: opacity .2s;
+    z-index: -1;
+}
+
+#image-popup.show {
+    background: rgba(0,0,0,.5);
+    opacity: 100;
+    transition: opacity .2s;
+    z-index: 9;
+}
+
+#image-popup img { 
+    animation: swing .4s infinite ease-in-out;
+    display: flex;
+    margin: 150px auto;
+    text-align: center;
+}
