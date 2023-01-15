@@ -1,12 +1,3 @@
-/* Emote Overrides */
-.channel-emote[title~="jesusfag"], .channel-emote[title~="thegirlsarefighting"] {
-  max-width: 200px;
-}
-
-.channel-emote[title~="deadly"], .channel-emote[title~="happybirthday4"], .channel-emote[title~="i will kill you"], .channel-emote[title~="bustintotears"], .channel-emote[title~="flamestory"], .channel-emote[title~="disappointed*"], .channel-emote[title~="femalegaze"], .channel-emote[title~="girlz rule"], .channel-emote[title~="pinkpilled"], .channel-emote[title~="retardina"], .channel-emote[title~="smelly bitch"], .channel-emote[title~="triggered"], .channel-emote[title~="keepclutchin"], .channel-emote[title~="happyhalloween1"], .channel-emote[title~="wooshshrimp"] {
-  max-width: 150px;
-}
-
 /** Current Theme: Strawbentines **/
 /** lovingly crafted by herbnona **/
 
@@ -244,6 +235,10 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 .nick-hover {
   background: rgba(0,0,0,.2);
+}
+
+.nick-highlight {
+  background-color: transparent;
 }
 
 #chatline {
