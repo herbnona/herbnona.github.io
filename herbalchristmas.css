@@ -52,6 +52,21 @@ h1, h2, h3, h4, h5, h6 {
     background: rgba(0,0,0,.5);
 }
 
+#motd .day {
+  font-weight: bold;
+  width: 100%;
+  display: block;
+}
+
+#motd .event {
+  font-style: italic;
+  line-height: 2em;
+}
+
+.darkmode {
+  display: none;
+}
+
 #chatheader, #videowrap-header {
     border: 1px solid #111;
     border-bottom-width: 0;

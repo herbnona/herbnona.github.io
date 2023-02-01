@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6 {
   filter: saturate(0.8);
 }
 
+.darkmode {
+  display: none;
+}
+
 #chatheader, #videowrap-header {
   border: 1px solid #111;
   border-bottom-width: 0;
