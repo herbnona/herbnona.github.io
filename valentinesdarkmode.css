@@ -674,6 +674,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     float: right;
 }
 
+@media (max-width: 768px) {
+    .modebutton, .heartbutton, #hearts {
+        display: none !important;
+    }
+}
+
 #hearts {
     position: fixed;
     top: 0;
