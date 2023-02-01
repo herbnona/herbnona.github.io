@@ -60,7 +60,7 @@ body {
 }
 
 .darkmode {
-    display: none;
+    display: none !important;
 }
 
 #chatheader, #videowrap-header {
