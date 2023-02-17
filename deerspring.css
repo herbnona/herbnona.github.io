@@ -4,10 +4,10 @@
 /* Colour Palette 
 ** #F9F5F0 - isabelline - background, emote popup, notifs
 ** #E47792 - shimmering blush - disconnect
-** #f8f8f5 - baby powder - chat text and pane text
+** #313D5A - baby powder - chat text and pane text
 ** #67597A - chinese violet - buttons
-** #E16F7C - dark spring green - control buttons 
-** #87D68D - granny smith apple - reconnect, button hovers, and default username
+** #334323 - dark spring green - control buttons 
+** #419D78 - granny smith apple - reconnect, button hovers, and default username
 ** #191516 - eerie black - modal text
 ** #D79BA5 - puce - transparent backgrounds
 ** #49111C - dark sienna - borders and text on light bg
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
-  color: #f8f8f5;
+  color: #313D5A;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 8px;
-  background: #E16F7C;
+  background: #334323;
   color: #F9F5F0;
   letter-spacing: 2px;
   font-size: 13px;
@@ -197,7 +197,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:hover {
-  background: #87D68D;
+  background: #419D78;
   text-decoration: none;
   text-shadow: none;
 }
@@ -250,12 +250,12 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .username {
-  color: #87D68D;
+  color: #419D78;
 }
 
 #messagebuffer {
-  background: #D08A96eb;
-  color: #f8f8f5;
+  background: #D6FFF6d4;
+  color: #313D5A;
   letter-spacing: 1px;
   font-size: 13px;
 }
@@ -269,7 +269,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #chatline {
-  background: #883049e8 !important;
+  background: #334323e8 !important;
   border-color: #49111c;
   border-top: none;
   color: #fff;
@@ -291,7 +291,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* User Pane */
 #userlist {
-  background: #E16F7C96;
+  background: #D6FFF696;
 }
 
 .userlist_item {
@@ -299,7 +299,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner {
-  color: #f8f8f5 !important;
+  color: #313D5A !important;
 }
 
 .userlist_op {
@@ -368,11 +368,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-  background: #E16F7C !important;
+  background: #334323 !important;
 }
 
 .videolist {
-  color: #f8f8f5;
+  color: #313D5A;
 }
 
 #queue_next::before {
@@ -387,13 +387,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
   font-size: 10px;
   border-radius: 0px;
   border: 0px;
-  background: #E16F7C !important;
+  background: #334323 !important;
   box-shadow: 0px 0px 0px;
   color: #F9F5F0;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-  background: #E16F7C !important;
+  background: #334323 !important;
   border-color: #000;
   color: #fff;
   box-shadow: 0px 0px 0px;
@@ -402,7 +402,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }  
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-  background: #E16F7C  !important;
+  background: #334323  !important;
   border-color: #000;
   color: #fff;
   box-shadow: 0px 0px 0px 0px;
@@ -416,7 +416,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-  background-color: #883049e8 !important;
+  background-color: #D6FFF6e8 !important;
   border-radius: 0;
   border-color: rgba(0,0,0,.8);
   color: rgba(225,225,225,.8);
@@ -483,7 +483,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-  color: #E16F7C;
+  color: #334323;
   font-size: 14px;
   padding: 5px;
   margin: 5px 0px;
@@ -516,7 +516,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-  background: #E16F7C96;
+  background: #33432396;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
@@ -537,8 +537,8 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Server Messages */
 .server-msg-reconnect {
-  border-color: #87D68D ;
-  color: #87D68D ;
+  border-color: #419D78 ;
+  color: #419D78 ;
 }
 
 .server-msg-disconnect {
@@ -574,7 +574,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-  background-color: #D08A96c2 !important;
+  background-color: #D6FFF6c2 !important;
   border-radius: 0;
 }
 
