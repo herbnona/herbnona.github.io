@@ -340,6 +340,14 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 /* Video Section */ 
+#currenttitle {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 90%;
+  display: inline-block;
+}
+
 .queue_entry {
   background: #F9F5F0d6;
   border-color: rgba(0,0,0,.8);
