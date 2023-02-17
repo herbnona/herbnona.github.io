@@ -3,14 +3,14 @@
 
 /* Colour Palette 
 ** #F9F5F0 - isabelline - background, emote popup, notifs
-** #E47792 - shimmering blush - disconnect
-** #313D5A - baby powder - chat text and pane text
-** #67597A - chinese violet - buttons
-** #334323 - dark spring green - control buttons 
-** #419D78 - granny smith apple - reconnect, button hovers, and default username
+** #876248 - raw umber - disconnect
+** #F8F7F6 - sea salt - chat text and pane text
+** #D49093 - puce - buttons
+** #638475 - hooker's green - control buttons 
+** #1A3730 - dark green - reconnect, button hovers, and default username
 ** #191516 - eerie black - modal text
-** #D79BA5 - puce - transparent backgrounds
-** #49111C - dark sienna - borders and text on light bg
+** #BA4F54 - bittersweet shimmer - transparent backgrounds
+** #49111C - chocolate cosmos - borders and text on light bg
 */
 
 /* Main Styles */
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
-  color: #313D5A;
+  color: #F8F7F6;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse {
-  background: #D79BA5d9 !important;
+  background: #BA4F54d9 !important;
   text-shadow: none;
   text-transform: lowercase;
   letter-spacing: 3px;
@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motdwrap {
-  background: #D79BA5a8;
+  background: #BA4F54a8;
 }
 
 #motd .day {
@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
   padding: 8px;
-  background: #334323;
+  background: #638475;
   color: #F9F5F0;
   letter-spacing: 2px;
   font-size: 13px;
@@ -128,7 +128,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-  background: #D79BA5d9 !important;
+  background: #BA4F54d9 !important;
   text-shadow: none;
   text-transform: lowercase;
   letter-spacing: 3px;
@@ -163,7 +163,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Buttons */
 .btn {
   appearance: button;
-  background-color: #67597A;
+  background-color: #D49093;
   background-image: none;
   border: 1px solid #000;
   border-radius: 4px;
@@ -190,20 +190,20 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:focus {
-  background-color: #67597A;
+  background-color: #D49093;
   outline: 0;
   text-decoration: none;
   text-shadow: none;
 }
 
 .btn:hover {
-  background: #419D78;
+  background: #1A3730;
   text-decoration: none;
   text-shadow: none;
 }
 
 .btn:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .btn-default:hover, .open>.dropdown-toggle.btn-default {
-  background-color: #67597A;
+  background-color: #D49093;
   border: 1px solid #000;
   box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
   outline: 0 !important;
@@ -246,16 +246,16 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-  color: #F9F5F0;
+  color: #888;
 }
 
 .username {
-  color: #419D78;
+  color: #1A3730;
 }
 
 #messagebuffer {
-  background: #D6FFF6d4;
-  color: #313D5A;
+  background: #BA4F54d4;
+  color: #F8F7F6;
   letter-spacing: 1px;
   font-size: 13px;
 }
@@ -269,7 +269,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #chatline {
-  background: #334323e8 !important;
+  background: #BA4F54e8 !important;
   border-color: #49111c;
   border-top: none;
   color: #fff;
@@ -291,7 +291,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* User Pane */
 #userlist {
-  background: #D6FFF696;
+  background: #BA4F5496;
 }
 
 .userlist_item {
@@ -299,11 +299,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner {
-  color: #313D5A !important;
+  color: #F8F7F6 !important;
 }
 
 .userlist_op {
-  color: #D79BA5 !important;
+  color: #BA4F54 !important;
 }
 
 .userlist_owner::before {
@@ -335,7 +335,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .glyphicon-time {
-  color: #D79BA5;
+  color: #BA4F54;
   padding-right: 2px;
 }
 
@@ -368,11 +368,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-  background: #334323 !important;
+  background: #638475 !important;
 }
 
 .videolist {
-  color: #313D5A;
+  color: #F8F7F6;
 }
 
 #queue_next::before {
@@ -387,13 +387,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
   font-size: 10px;
   border-radius: 0px;
   border: 0px;
-  background: #334323 !important;
+  background: #638475 !important;
   box-shadow: 0px 0px 0px;
   color: #F9F5F0;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-  background: #334323 !important;
+  background: #638475 !important;
   border-color: #000;
   color: #fff;
   box-shadow: 0px 0px 0px;
@@ -402,7 +402,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }  
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-  background: #334323  !important;
+  background: #638475  !important;
   border-color: #000;
   color: #fff;
   box-shadow: 0px 0px 0px 0px;
@@ -416,7 +416,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-  background-color: #D6FFF6e8 !important;
+  background-color: #BA4F54e8 !important;
   border-radius: 0;
   border-color: rgba(0,0,0,.8);
   color: rgba(225,225,225,.8);
@@ -468,7 +468,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Guest Login */
 #guestlogin .input-group-addon {
   min-width: 120px;
-  background: #D79BA5d9;
+  background: #BA4F54d9;
   text-transform: lowercase;
   font-size: 12px;
   letter-spacing: 2px;
@@ -483,7 +483,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-  color: #334323;
+  color: #638475;
   font-size: 14px;
   padding: 5px;
   margin: 5px 0px;
@@ -516,17 +516,17 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-  background: #33432396;
+  background: #63847596;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
-  background: #D79BA5d9 !important;
+  background: #BA4F54d9 !important;
   color: #fff;
 }
 
 #pollwrap .well h3 {
   margin-top: 0;
-  color: #D79BA5;
+  color: #BA4F54;
   font-size: 18px;
 }
 
@@ -537,13 +537,15 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Server Messages */
 .server-msg-reconnect {
-  border-color: #419D78 ;
-  color: #419D78 ;
+  background: #90CBBD;
+  border-color: #1A3730 ;
+  color: #1A3730 ;
 }
 
 .server-msg-disconnect {
-  border-color: #E47792;
-  color: #E47792;
+  border-color: #876248;
+  color: #876248;
+  background: #DECECA;
 }
 
 /* Modals */
@@ -574,18 +576,18 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-  background-color: #D6FFF6c2 !important;
+  background-color: #BA4F54c2 !important;
   border-radius: 0;
 }
 
 .modal-body .pagination {
   border-radius: 0;
-  background: #67597A;
+  background: #D49093;
   text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-  background: #67597A;
+  background: #D49093;
   letter-spacing: 2px;
   font-size: 12px;
   color: #fff;
@@ -599,7 +601,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body table {
-  background: #D79BA540;
+  background: #BA4F5440;
 }
 
 .pagination>li:first-child>a, .pagination>li:first-child>span, .pagination>li:last-child>a, .pagination>li:last-child>span {
@@ -615,18 +617,18 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
-  background-color: #D79BA580;
+  background-color: #BA4F5480;
 }
 
 .dropdown-menu {
-  background-color: #D79BA5d9;
+  background-color: #BA4F54d9;
   font-size: 11px;
   font-weight: 200;
   text-shadow:none;
 }
 
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
-  background-color: #D79BA5ed
+  background-color: #BA4F54ed
 }
 
 /* Emote List */
