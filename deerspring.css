@@ -246,7 +246,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-  color: #888;
+  color: #eee;
 }
 
 .username {
