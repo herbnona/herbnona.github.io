@@ -23,7 +23,7 @@
 
 body {
     background: url('https://i.postimg.cc/0Ntq5qH1/hallowbats.png') #202020;
-    cursor: url('https://i.postimg.cc/3w40154H/cowsunglasses.png'), auto;
+    cursor: url('https://i.postimg.cc/4xKjg7xr/cowwitch.png'), auto;	
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -506,7 +506,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .poll-notify::before {
-    content: '\1F353\0020';
+    content: '\1F383\0020';
 }
 
 #pollwrap {
