@@ -308,11 +308,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner::before {
-    content: '\02764\0020';
+    content: '\1F480\0020';
 }
 
 .userlist_op::before {
-    content: '\0273F\0020';
+    content: '\1F383\0020';
 }
 
 .userlist_guest {
