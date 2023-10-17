@@ -679,6 +679,11 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     text-align: center;
 }
 
+.modebutton {
+    float: right;
+    margin-right: 5px !important;
+  }
+
 @-moz-keyframes swing {
     from {
             -moz-transform: rotate(-45deg) translateX(10px);

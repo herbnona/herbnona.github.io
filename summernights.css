@@ -684,43 +684,11 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     text-align: center;
 }
 
-/* Hearts! */
 .modebutton {
     float: right;
     margin-right: 5px !important;
 }
 
-.heartbutton {
-    float: right;
-}
-
-@media (max-width: 768px) {
-    .modebutton, .heartbutton, #hearts {
-        display: none !important;
-    }
-}
-
-#hearts {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
-.heart-container {
-    float: left;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    -moz-animation-duration: 8s;
-    -moz-animation-name: fall;
-    -moz-animation-timing-function: linear;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-name: fall;
-    -webkit-animation-timing-function: linear;
-}
 @-moz-keyframes fall {
     from {
             top: -20px;

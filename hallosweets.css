@@ -71,7 +71,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motdwrap {
-    background: #181411a8;
+    background: #aa5bd2b5;
 }
 
 #motd .day {
@@ -85,8 +85,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2em;
 }
 
-#motd .dollz {
-    filter: saturate(0.8);
+#motd marquee {
+    filter: hue-rotate(58deg)brightness(170%)drop-shadow(1px 1px 0px white);
+}
+
+#motd .regularMOTD {
+    filter: sepia(60%);
 }
 
 @media (max-width: 768px) {
@@ -678,6 +682,11 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     margin: 150px auto;
     text-align: center;
 }
+
+.modebutton {
+    float: right;
+    margin-right: 5px !important;
+  }
 
 @-moz-keyframes swing {
     from {
