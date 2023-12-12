@@ -46,12 +46,11 @@ const gift_Array = [
     "giftbox","giftcandycane","giftcocoa","giftdeerglobe","giftgingerbreadman","giftgreenpresent","gifthouse","giftknitting","giftpresentglobe","giftredpresent","giftsantaglobe","gifttreat","gifttree","gifttreeglobe","giftcherryicebox","giftjoulutorttu","giftpepernoten","giftpudding","giftstroopwafel","giftyulelog","giftpizelle","giftbuttertart","giftbasket","giftboot","giftbunny1","giftbunny2","giftcake","giftcakepop","giftcandycane2","giftcat1","giftcat2","giftcocoa2","giftcocoa2","giftcocoa3","giftcocoa4","giftcone1","giftcone2","giftcone3","giftcupcake1","giftcupcake2","giftcookie","giftcupcake3","giftdog","giftdog2","giftdog3","gifteggnog","giftessence","giftgameboy","giftcamecube","giftgba","gifthellokitty","gifthouse2","giftipod1","giftipod2","giftidog","giftlamp","giftmixer","giftmoney","giftpresent2","giftpudding2","giftrecord","giftsnes","giftstocking","giftsweater","giftteddy","giftteddy2","giftteddy3","giftteddy4","gifttrain","gifttreat2","giftyulelog2"
 ];
 
-// [!gift] Santa gifts
+// [!santa] Santa gifts
 const santa_Array = [
     "toybear","toybearsleep","toyblanket","toybunny","toycoal","toycrayons","toygame","toylocket","toysnowman","toybarbie","toybeanie1","toybeanie2","toybear","toybetty","toybopit","toycamera","toydiscman","toygb","toygirltech","toyidog","toylamp","toylipsmack","toyn64","toyplush1","toyplush2","toyplush2","toyplush3","toypolly","toypony1","toypony2","toytalkback","toytama","toyteddy"
 ];
 
-const queue = document.getElementById("queue");
 var sortedVideos = {};
 const chatformel = $("#chatwrap").find("form");
 
@@ -173,59 +172,6 @@ function counterCheck() {
     }
 }
 
-function uniqueContributors(queuedVids, leader) {
-    var contributors = [];
-    contributors.push(leader);
-    for (i = 1; i < queuedVids.length; i++) {
-        var whoAdded = queuedVids[i].getAttribute("title");
-        whoAdded = whoAdded.replace('Added by: ','');
-        $(queuedVids[i]).addClass(whoAdded);
-        contributors.push(whoAdded);
-    }
-    let uniqueContributors = [...new Set(contributors)];
-    return uniqueContributors;
-}
-
-function setOrderAttrs(uniqueCont) {
-    var matchingVids = [];
-    for (var j = uniqueCont.length - 1; j >= 0; j--) {
-        matchingVids = document.querySelectorAll('[data-addedby="'+uniqueCont[j]+'"]');
-        for (var k = 0; k < matchingVids.length; k++ ) {
-            matchingVids[k].setAttribute('data-queuedbyorder',j);
-        }
-    }
-}
-
-function createArraysPerUser(usergroup) {
-    for (i = 0; i < usergroup.length; i++) {
-        var arrayName = usergroup[i];
-        sortedVideos[arrayName] = queue.getElementsByClassName(arrayName);
-    }
-}
-
-function smartShuffle(leader) {
-    let queuedVids = queue.getElementsByClassName("queue_temp");
-    var dedupedCont = uniqueContributors(queuedVids, leader);
-    setOrderAttrs(dedupedCont);
-    createArraysPerUser(dedupedCont);
-
-    var numVidsArray = [];
-    for (const item in sortedVideos) {
-        numVidsArray.push(sortedVideos[item].length);
-    }
-    var largestArray = Math.max(...numVidsArray);
-    
-    for (i = largestArray; i >= 0; i--) {
-        for (const item in sortedVideos) {
-            if (sortedVideos[item][i] != undefined){
-                sortedVideos[item][i].getElementsByClassName("qbtn-next")[0].click();
-            } else {
-                continue;
-            }
-        }
-    }
-}
-
 function daysUntilChristmas() {
     var one_day = 1000 * 60 * 60 * 24
       
@@ -332,18 +278,6 @@ function prepareMessage(msg) {
                 rand2=a=Math.round(Math.random()*(currUserCount-1));
             }
             msg='mistletoe ' + nonnies[rand1] + ' gave ' + nonnies[rand2] + ' a smek';
-        } else if (msg.indexOf("!shuffle") == 0) {
-            if (hasPermission("playlistmove")) {
-                var leader = queue.getElementsByClassName("queue_active")[0].getAttribute("title");
-                if (msg.indexOf("@") > 0) {
-                    leader = msg.split('@')[1];
-                } else {
-                    leader = leader.replace('Added by: ','');
-                }
-                smartShuffle(leader);
-            } else {
-                msg='You do not have permission to do that!';
-            }
         } else if (msg.indexOf("!time") == 0) {
             // current local time function, if message begins with !time
             var h = new Date().getHours();
