@@ -92,6 +92,7 @@ var newthemeSelect = [
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],
     ["Hallosweets", "/css/themes/slate.css", "https://herbnona.github.io/hallosweets.css"],
     ["Moomin Winter", "/css/themes/slate.css", "https://herbnona.github.io/winter.css"],
+    ["Starcember", "/css/themes/slate.css", "https://herbnona.github.io/starcember.css"],
     ["Christmas", "/css/themes/slate.css", "https://herbnona.github.io/herbalchristmas.css"]
 ]
 
