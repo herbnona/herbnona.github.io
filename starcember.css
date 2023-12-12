@@ -2,7 +2,7 @@
 /** lovingly crafted by herbnona **/
 
 /* Colour Palette 
-** #173653 - prussian blue - background, emote popup, notifs
+** #81BAD9 - carolina blue - background, emote popup, notifs
 ** #E47792 - shimmering blush - disconnect
 ** #DFF2D8 - nyanza - chat text and pane text
 ** #FCBFB7 - melon - buttons
@@ -17,7 +17,7 @@
 * { text-shadow: none !important; }
 
 body {
-    background: url('https://herbnona.github.io/backgrounds/winternight.png') #173653;
+    background: url('https://herbnona.github.io/backgrounds/matryoshka.png') #81BAD9;
     cursor: url('https://i.postimg.cc/rFDGF0QJ/christmas-cow-export.png'), auto;
     background-size: 25%;
 }
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background: #173653;
+    background: #81BAD9;
     color: #F8FAF0;
 }
 
@@ -248,7 +248,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-    color: #173653;
+    color: #81BAD9;
 }
 
 .username {
@@ -564,7 +564,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 /* Modals */
 .modal-content {
     color: #000;
-    background: #173653;
+    background: #81BAD9;
     border-radius: 0;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     text-shadow: none;
