@@ -169,7 +169,7 @@ function makePost() {
   let announceDay = eventRelDate(new Date(dateEvent.value), evDate);
   let cleanEvent = (eventSum.value != '' ? eventSum.value.replace(/[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2580-\u27BF]|\uD83E[\uDD10-\uDDFF]/g, '') : '');
   let movie1Title = '***' +  document.getElementsByClassName('moovietitle_1')[0].value + '***\n';
-  let movie1Sum = '> ' + document.getElementsByClassName('mooviesum_1')[0].value + '\n\n';
+  let movie1Sum = '> ' + document.getElementsByClassName('mooviesum_1')[0].value + '\n';
   let movie2TitleVal = document.getElementsByClassName('moovietitle_2')[0].value;
   let movie2SumVal = document.getElementsByClassName('mooviesum_2')[0].value;
   let movie3TitleVal = document.getElementsByClassName('moovietitle_3')[0].value;
