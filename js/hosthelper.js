@@ -214,6 +214,7 @@ async function dateSave() {
     let dateVal = dateSelect.value;
     let saveTitle = eventTitle.value;
     let saveCopy = postCopy.value;
+    let enteredDate = moment.tz(dateEvent.value + ' ' + timeSelect.value, timezoneSelect.value);
     saveEvent.setAttribute('disabled','');
     saveCancel.setAttribute('disabled','');
     saveStatus.innerText = 'Saving your event...';
@@ -223,6 +224,7 @@ async function dateSave() {
         method: 'POST',
         body: new URLSearchParams({
         "date": dateVal,
+        "startTime": enteredDate.tz('Europe/Amsterdam').format(),
         "eventTitle": saveTitle,
         "postCopy": saveCopy
         }),
