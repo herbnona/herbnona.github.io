@@ -3296,3 +3296,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
         transform: translate(49.79505vw, 100vh) scale(0.0799);
     }
   }
+
+#hearts {
+    display: none;
+}

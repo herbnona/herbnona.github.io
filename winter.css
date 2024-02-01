@@ -3044,3 +3044,6 @@ z-index: -1;
     transform: translate(49.79505vw, 100vh) scale(0.0799);
 }
 }
+#hearts {
+  display: none;
+}

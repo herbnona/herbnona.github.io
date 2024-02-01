@@ -3055,3 +3055,7 @@ h1, h2, h3, h4, h5, h6 {
       transform: translate(49.79505vw, 100vh) scale(0.0799);
   }
 }
+
+#hearts {
+  display: none;
+}

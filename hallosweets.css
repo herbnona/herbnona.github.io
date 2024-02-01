@@ -726,3 +726,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
             -webkit-transform: scaleX(1) translateX(-5px);
     }
 }
+
+#hearts {
+    display: none;
+}

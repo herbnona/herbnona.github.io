@@ -393,3 +393,7 @@ body {
     margin: 150px auto;
     text-align: center;
 }
+
+#hearts {
+    display: none;
+}
