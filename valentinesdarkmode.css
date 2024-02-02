@@ -511,7 +511,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .poll-notify::before {
-    content: '\1F353\0020';
+    content: '\2601\0020';
 }
 
 #pollwrap {
