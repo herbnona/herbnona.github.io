@@ -29,6 +29,7 @@ const saveStatus = document.getElementById('savestatus');
 const saveForm = document.getElementById('saveForm');
 const saveEvent = document.getElementById('saveEventConfirm');
 const saveCancel = document.getElementById('saveEventCancel');
+const askForHelp = document.getElementById('askforhelp');
 
 window.addEventListener('DOMContentLoaded', (event) => {
   dateSelect.valueAsDate = new Date();
@@ -214,6 +215,7 @@ async function dateSave() {
     let dateVal = dateSelect.value;
     let saveTitle = eventTitle.value;
     let saveCopy = postCopy.value;
+    let askedForHelp = askForHelp.value;
     let enteredDate = moment.tz(dateEvent.value + ' ' + timeSelect.value, timezoneSelect.value);
     let startTime = enteredDate.tz('Europe/Amsterdam').format();
     let endTime = moment(startTime).add(4, 'hours').format();
@@ -229,7 +231,8 @@ async function dateSave() {
         "startTime": startTime,
         "endTime": endTime,
         "eventTitle": saveTitle,
-        "postCopy": saveCopy
+        "postCopy": saveCopy,
+        "modRequest": askedForHelp
         }),
         error: function (status) {
             saveStatus.innerText = 'Something went wrong. Please retry.';
