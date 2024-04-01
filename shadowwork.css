@@ -40,6 +40,8 @@ a {
 
 mark {
     background-color: #BDD9BF;
+    color: #000;
+    font-size: 1.4rem;
 }
 
 .section {
@@ -113,8 +115,10 @@ details[open] > summary {
 }
 
 .spoiler {
+    background-color: #BDD9BF;
+    color: #000;
     font-size: 1.4rem;
-    line-height: 3rem;
+    line-height: 1.6rem;
 }
   
 
