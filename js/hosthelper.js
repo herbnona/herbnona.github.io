@@ -215,10 +215,10 @@ async function dateSave() {
     let dateVal = dateSelect.value;
     let saveTitle = eventTitle.value;
     let saveCopy = postCopy.value;
-    let askedForHelp = askForHelp.value;
+    let askedForHelp = askForHelp.checked;
     let enteredDate = moment.tz(dateEvent.value + ' ' + timeSelect.value, timezoneSelect.value);
     let startTime = enteredDate.tz('Europe/Amsterdam').format();
-    let endTime = moment(startTime).add(4, 'hours').format();
+    let endTime = moment(startTime).add(3, 'hours').format();
     saveEvent.setAttribute('disabled','');
     saveCancel.setAttribute('disabled','');
     saveStatus.innerText = 'Saving your event...';
