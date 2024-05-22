@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tunesday Maker</title>
+    <link rel="icon" type="image/x-icon" href="images/cowhearts.png">
+    <link rel="stylesheet" href="hosthelper.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+  </head>
+  <body>
+    <div class="section intro">
+      <h1>Tunesday Maker</h1>
+      <p>Here's what I can do:</p>
+      <ul>
+        <li>Create an announcement post for you to copy and paste to the thread, including time zone conversions.</li>
+        <li>Save the date for your Tunesday.</li>
+        <li>Create an event in Discord for your Tunesday.</li>
+        <li>Post an announcement in Discord the day of.</li>
+      </ul>
+      <p>Unfortunately, I'm just a bot and not a host. Here's what you will still need to do yourself:</p>
+      <ul>
+        <li>Post the announcement and reminders into the moovie thread.</li>
+        <li>Host the event!</li>
+      </ul>
+    </div>
+    <div id="js-postHelper" class="section">
+      <h2>Post Helper</h2>
+      <form id="entryForm">
+        <input pattern="^[^\u{203C}\u{2049}\u{20E3}\u{2122}\u{2139}\u{2194}-\u{2199}\u{21A9}-\u{21AA}\u{231A}-\u{231B}\u{23E9}-\u{23EC}\u{23F0}\u{23F3}\u{24C2}\u{25AA}-\u{25AB}\u{25B6}\u{25C0}\u{25FB}-\u{25FE}\u{2600}-\u{2601}\u{260E}\u{2611}\u{2614}-\u{2615}\u{261D}\u{263A}\u{2648}-\u{2653}\u{2660}\u{2663}\u{2665}-\u{2666}\u{2668}\u{267B}\u{267F}\u{2693}\u{26A0}-\u{26A1}\u{26AA}-\u{26AB}\u{26BD}-\u{26BE}\u{26C4}-\u{26C5}\u{26CE}\u{26D4}\u{26EA}\u{26F2}-\u{26F3}\u{26F5}\u{26FA}\u{26FD}\u{2702}\u{2705}\u{2708}-\u{270C}\u{270F}\u{2712}\u{2714}\u{2716}\u{2728}\u{2733}-\u{2734}\u{2744}\u{2747}\u{274C}\u{274E}\u{2753}-\u{2755}\u{2757}\u{2764}\u{2795}-\u{2797}\u{27A1}\u{27B0}\u{2934}-\u{2935}\u{2B05}-\u{2B07}\u{2B1B}-\u{2B1C}\u{2B50}\u{2B55}\u{3030}\u{303D}\u{3297}\u{3299}\u{1F004}\u{1F0CF}\u{1F170}-\u{1F171}\u{1F17E}-\u{1F17F}\u{1F18E}\u{1F191}-\u{1F19A}\u{1F1E7}-\u{1F1EC}\u{1F1EE}-\u{1F1F0}\u{1F1F3}\u{1F1F5}\u{1F1F7}-\u{1F1FA}\u{1F201}-\u{1F202}\u{1F21A}\u{1F22F}\u{1F232}-\u{1F23A}\u{1F250}-\u{1F251}\u{1F300}-\u{1F320}\u{1F330}-\u{1F335}\u{1F337}-\u{1F37C}\u{1F380}-\u{1F393}\u{1F3A0}-\u{1F3C4}\u{1F3C6}-\u{1F3CA}\u{1F3E0}-\u{1F3F0}\u{1F400}-\u{1F43E}\u{1F440}\u{1F442}-\u{1F4F7}\u{1F4F9}-\u{1F4FC}\u{1F500}-\u{1F507}\u{1F509}-\u{1F53D}\u{1F550}-\u{1F567}\u{1F5FB}-\u{1F640}\u{1F645}-\u{1F64F}\u{1F680}-\u{1F68A}]*$" class="longfield" type="text" id="eventtitle" placeholder="Event Title (examples: disco music tunesday or songs that make you happy tunesday)" required>
+        <fieldset class="timeselection">
+          <input id="dateEvent" type="date" >
+          <input id="timeSelect" type="time" name="timestart" value="20:00" hidden>
+          <select class="timezone" name="timezone" id="timezone" required hidden>
+            <option value="Europe/Amsterdam" data-select2-id="select2-data-3-0f1g" data-custom-attribute="Europe/Amsterdam">Europe/Amsterdam +01:00</option>
+          </select>
+        </fieldset>
+        <div id="tunedaysection" class="tunedaysection">
+          <fieldset>
+            <label for="eventsum">Describe your theme here.</label>
+            <textarea id="eventSum" class="longfield" name="eventsum" placeholder="Example: Let's watch creepy found-footage style YouTube videos together! Come share your favorites! Please keep your selections to 10 minutes long or less."></textarea>
+          </fieldset>
+          </div>
+        <input class="btn" id="reviewbtn" type="submit" value="review">
+      </form>
+    </div>
+    <dialog id="reviewdialog">
+      <form method="dialog">
+        <p>Review your event below. If all looks good, copy your announcement and paste it to the thread!<br>
+        If you want to save your event so no one else books that day, click the 'save this event' button.</p>
+        <div id="reviewtext">I'm not ready yet!</div>
+        <br/>
+        <textarea id="postcopy" class="longfield postcopy" readonly></textarea>
+        <div class="btn-container">
+          <button class="btn">go back / edit</button>
+          <div class="tooltip">
+            <button onclick="copyText()" onmouseout="outCopyFunc()" class="btn">
+              <span class="tooltiptext" id="copytooltip">click to copy</span>
+              looks good, copy my post
+            </button>
+          </div>
+          <button onclick="confirmdialog.showModal()" class="btn seriousbtn" id="saveEvent">save this event</button>
+        </div>
+      </form>
+    </dialog>
+    <dialog id="confirmdialog">
+      <form method="dialog" id="saveForm">
+        <p>Please confirm you want to save! You will not be able to edit the event once you have saved it. Click ok if you are sure.</p>
+        <p>You are not required to save your event, but it will hold it in our calendar so nobody else books over your selected date.</p>
+        <div class="modrequest">
+          <input type="checkbox" id="askforhelp" class="" name="askforhelp">
+          <label for="askforhelp"><em>Also request a moovie room admin to join your event to help you out</em></label>
+        </div><br/>
+        <div id="savestatus"></div>
+        <button class="btn" id="saveEventCancel" type="button" onclick="confirmdialog.close()">go back / edit</button>
+        <button class="btn seriousbtn" id="saveEventConfirm" type="submit">save it!</button>
+      </form>
+    </dialog>
+    <script src="js/moment.js"></script>
+    <script src="js/moment-timezone-with-data.js"></script>
+    <script src="js/hosthelper.js"></script>
+  </body>
+</html>
