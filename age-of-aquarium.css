@@ -16,6 +16,11 @@
 /* Main Styles */
 * { text-shadow: none !important; }
 
+@keyframes swing {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
 @keyframes floatup {
     0% {top:100vh}
     100% {top:-30vh}
@@ -710,19 +715,19 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .bubbles {
-    position: absolute;
+    position: fixed;
     animation: 30s floatup linear infinite;
     z-index: -2;
 }
 
 .fishes {
     animation: 102s swimmingschool linear infinite alternate;
-    position: absolute;
+    position: fixed;
     z-index: -1;
 }
 
 .ray {
-    position: absolute;
+    position: fixed;
     animation: 80s swimby linear infinite;
     z-index: -1;
 }
