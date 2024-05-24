@@ -17,8 +17,7 @@
 * { text-shadow: none !important; }
 
 @keyframes floatup {
-    0% {bottom:-30vh}
-    50% {bottom: 50vw}
+    0% {top:100vh}
     100% {top:-30vh}
 }
 
@@ -712,7 +711,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .bubbles {
     position: absolute;
-    animation: 50s floatup linear infinite;
+    animation: 30s floatup linear infinite;
     z-index: -2;
 }
 
