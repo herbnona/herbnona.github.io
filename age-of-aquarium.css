@@ -16,6 +16,12 @@
 /* Main Styles */
 * { text-shadow: none !important; }
 
+@keyframes floatup {
+    0% {bottom:-30vh}
+    50% {bottom: 50vw}
+    100% {top:-30vh}
+}
+
 @keyframes swimby {
     0% {right:-30vw; top:40vh}
     50% {right:50vw; top:60vh}
@@ -702,6 +708,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .fishbutton {
     float: right;
+}
+
+.bubbles {
+    position: absolute;
+    animation: 50s floatup linear infinite;
+    z-index: -2;
 }
 
 .fishes {
