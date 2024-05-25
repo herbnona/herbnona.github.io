@@ -15,6 +15,11 @@
     display: none;
 }
 
+/* Hide items from seasonal themes */
+.effect {
+    display: none;
+}
+
  /* Main Styles */
 @keyframes swing {
     0%, 100% { transform: rotate(-10deg); }

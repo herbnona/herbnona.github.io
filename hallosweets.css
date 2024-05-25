@@ -13,6 +13,11 @@
 ** #212121 - eerie black - borders and text on dark bg
 */
 
+/* Hide items from seasonal themes */
+.effect {
+    display: none;
+}
+
 /* Main Styles */
 * { text-shadow: none !important; }
 
