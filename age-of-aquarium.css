@@ -33,9 +33,9 @@
 }
 
 @keyframes swimbyotherway {
-    0% {left:-30vw; top:70vh}
-    50% {left:50vw; top:60vh}
-    100% {left:100vw; top:40vh}
+    0% {left:-30vw; top:80vh}
+    50% {left:50vw; top:30vh}
+    100% {left:100vw; top:60vh}
 }
 
 @keyframes swimmingschool {
@@ -738,9 +738,9 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     z-index: -1;
 }
 
-.lilgreen {
+.liljelly {
     position: fixed;
-    animation: 30s swimbyotherway linear infinite;
+    animation: 45s swimbyotherway linear infinite;
     z-index: -1;
 }
 
