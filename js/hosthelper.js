@@ -24,6 +24,7 @@ const eventTitle = document.getElementById('eventtitle');
 const eventSum = document.getElementById('eventSum');
 const timePost = document.getElementById('timepost');
 const postCopy = document.getElementById('postcopy');
+const postCopySave = document.getElementById('postcopysave');
 const copyTooltip = document.getElementById('copytooltip');
 const saveStatus = document.getElementById('savestatus');
 const saveForm = document.getElementById('saveForm');
@@ -162,12 +163,12 @@ function eventRelDate(date, backup) {
 function makePost() {
   event.preventDefault();
   let evTitle = eventTitle.value;
-  let dateVal = new Date(dateEvent.value + 'T' + timeSelect.value);
-  let enteredDate = moment.tz(dateEvent.value + ' ' + timeSelect.value, timezoneSelect.value);
+  let dateVal = new Date(dateSelect.value + 'T' + timeSelect.value);
+  let enteredDate = moment.tz(dateSelect.value + ' ' + timeSelect.value, timezoneSelect.value);
   let options = { month: 'long', day: 'numeric' }
   let evDate =  dateVal.toLocaleDateString(undefined, options); 
   let evTime = timeSelect.value;
-  let announceDay = eventRelDate(new Date(dateEvent.value), evDate);
+  let announceDay = eventRelDate(new Date(dateSelect.value), evDate);
   let cleanEvent = (eventSum.value != '' ? eventSum.value.replace(/[\uE000-\uF8FF]|\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDFFF]|[\u2580-\u27BF]|\uD83E[\uDD10-\uDDFF]/g, '') : '');
   let movie1Title = '***' +  document.getElementsByClassName('moovietitle_1')[0].value + '***\n';
   let movie1Sum = '> ' + document.getElementsByClassName('mooviesum_1')[0].value + '\n';
@@ -190,8 +191,10 @@ function makePost() {
   
   if (otherOption.checked) {
     postCopy.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
+    postCopySave.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
   } else {
     postCopy.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
+    postCopySave.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
   }
 }
 
@@ -216,7 +219,7 @@ async function dateSave() {
     let saveTitle = eventTitle.value;
     let saveCopy = postCopy.value;
     let askedForHelp = askForHelp.checked;
-    let enteredDate = moment.tz(dateEvent.value + ' ' + timeSelect.value, timezoneSelect.value);
+    let enteredDate = moment.tz(dateSelect.value + ' ' + timeSelect.value, timezoneSelect.value);
     let startTime = enteredDate.tz('Europe/Amsterdam').format();
     let endTime = moment(startTime).add(3, 'hours').format();
     saveEvent.setAttribute('disabled','');
@@ -242,11 +245,13 @@ async function dateSave() {
         }
     })
     const saveResponse = await response.json();
+    console.log(saveResponse);
     if (saveResponse.success == 'page') {
         saveStatus.innerText = 'Saved! All you have to do now is post your announcement and host your event!';
         saveEvent.innerText = 'saved!';
         saveCancel.innerText = 'close';
         saveCancel.removeAttribute('disabled');
+        saveCancel.setAttribute( "onClick", "window.location.reload();" );
         entryForm.reset()
     } else {
         saveStatus.innerText = 'Something went wrong. Please retry.';
