@@ -190,11 +190,11 @@ function makePost() {
   reviewText.innerHTML = 'You want to host <mark>' + evTitle + '</mark> on <mark>' + evDate + '</mark> at <mark>' + evTime + '</mark> your local time.';
   
   if (otherOption.checked) {
-    postCopy.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
-    postCopySave.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
+    postCopy.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/moovieroom'; 
+    postCopySave.value = '**' + announceDay + '**\n\n' + '***' + evTitle + '***\n' + '> ' + cleanEvent + '\n\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/moovieroom'; 
   } else {
-    postCopy.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
-    postCopySave.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/farmmovienights'; 
+    postCopy.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/moovieroom'; 
+    postCopySave.value = '**' + announceDay + '**\n\n' + movie1Title + movie1Sum + movie2Title + movie2Sum + movie3Title + movie3Sum + movie4Title + movie4Sum + '\n**SHOWTIME**\n' + convertedTzString + '\n\nhttps://cytu.be/r/moovieroom'; 
   }
 }
 
