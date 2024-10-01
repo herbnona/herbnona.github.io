@@ -86,13 +86,13 @@ imagepopup.appendChild(imgTag);
 /**** END - Chat Bot variables ****/
 
 /**** Custom Buttons ****/
-const fishbutton = document.createElement('button');
+const ghostbutton = document.createElement('button');
 const leftcontrols = document.getElementById('leftcontrols');
-fishbutton.innerText = '𓆟 no fish';
-fishbutton.id = 'fishbutton';
-fishbutton.className = 'btn btn-sm btn-default fishbutton effect';
+ghostbutton.innerText = '⚰ hide ghosts';
+ghostbutton.id = 'ghostbutton';
+ghostbutton.className = 'btn btn-sm btn-default ghostbutton effect';
 
-leftcontrols.appendChild(fishbutton);
+leftcontrols.appendChild(ghostbutton);
 
 /**** END - Custom Buttons ****/
 
@@ -447,15 +447,15 @@ $("#chatbtn").on("click", function() {
 });
 
 
-$("#fishbutton").on("click", function() {
-    const fishcontain = document.getElementById("fish-container");
-    if (fishcontain.style.display !== 'none') {
-        fishcontain.style.display = 'none';
-        fishbutton.innerText = '𓆟 go fish';
+$("#ghostbutton").on("click", function() {
+    const ghostcontain = document.getElementById("ghost-container");
+    if (ghostcontain.style.display !== 'none') {
+        ghostcontain.style.display = 'none';
+        ghostbutton.innerText = '⚰ boo!';
     }
     else {
-        fishcontain.style.display = 'block';
-        fishbutton.innerText = '𓆟 no fish';
+        ghostcontain.style.display = 'block';
+        ghostbutton.innerText = '⚰ hide ghosts';
     }
 });
 

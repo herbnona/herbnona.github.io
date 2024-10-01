@@ -3,6 +3,7 @@
 
 /* Colour Palette 
 ** #3b1c57 - russian violet - background, emote popup, notifs
+** #3D246A - tekhelet - modal backgrounds
 ** #F56476 - rose pompadour - disconnect
 ** #F8F7FF - ghost white - chat text and pane text
 ** #F19953 - sandy brown - buttons
@@ -26,19 +27,19 @@
     100% {top:-30vh}
 }
 
-@keyframes swimby {
+@keyframes floatby {
     0% {right:-30vw; top:40vh}
     50% {right:50vw; top:60vh}
     100% {right:100vw; top:30vh}
 }
 
-@keyframes swimbyotherway {
+@keyframes floatbyotherway {
     0% {left:-30vw; top:80vh}
     50% {left:50vw; top:10vh}
     100% {left:100vw; top:60vh}
 }
 
-@keyframes swimmingschool {
+@keyframes floatmingschool {
     0%   {left:0px; top:0px;}
     25%  {left:60vw; top:0px;}
     50%  {left:80vw; top:80vh;}
@@ -47,9 +48,9 @@
 }
 
 body {
-    background: url('../backgrounds/underwater.jpeg') #0C465B no-repeat;
+    background: #3D246A;
     background-size: 100vw 100vh;
-    cursor: url('https://i.postimg.cc/4xKjg7xr/cowwitch.png'), auto;	
+    cursor: url('../cursors/cowwitch.png'), auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background: #0C465B;
+    background: #3D246A;
     color: #F8FAF0;
 }
 
@@ -278,7 +279,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-    color: #0C465B;
+    color: #3D246A;
 }
 
 .username {
@@ -594,7 +595,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 /* Modals */
 .modal-content {
     color: #000;
-    background: #0C465B;
+    background: #3D246A;
     border-radius: 0;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     text-shadow: none;
@@ -710,37 +711,25 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     text-align: center;
 }
 
-/* fish and bubbles! */
+/* ghosts! */
 .modebutton {
     float: right;
     margin-right: 5px !important;
 }
 
-.fishbutton {
+.ghostbutton {
     float: right;
 }
 
-.bubbles {
+.lilghost {
     position: fixed;
-    animation: 30s floatup linear infinite;
-    z-index: -2;
-}
-
-.fishes {
-    animation: 102s swimmingschool linear infinite alternate;
-    position: fixed;
+    animation: 60s floatby linear infinite;
     z-index: -1;
 }
 
-.ray {
+.witchghost {
     position: fixed;
-    animation: 60s swimby linear infinite;
-    z-index: -1;
-}
-
-.liljelly {
-    position: fixed;
-    animation: 45s swimbyotherway linear infinite;
+    animation: 45s floatbyotherway linear infinite;
     z-index: -1;
 }
 
@@ -991,7 +980,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 @media (max-width: 768px) {
-    .modebutton, .fishbutton, .fish-container {
+    .modebutton, .ghostbutton, .ghost-container {
         display: none !important;
     }
 
