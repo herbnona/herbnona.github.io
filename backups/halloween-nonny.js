@@ -27,7 +27,7 @@ function setCookie(name,value,days) {
         var expires = "; expires=" + date.toUTCString();
         var maxage = "; max-age=" + (days * 86400000);
     }
-    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/theherbgarden";
+    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/moovieroom";
 }
 
 /**** Chat Bot variables ****/
@@ -54,21 +54,20 @@ const costume_Array = [
 
 // [!boo] options
 const boo_Array = [
-    "https://i.postimg.cc/C1KkQ638/cow3.png",
-    "https://i.postimg.cc/25GnTfKm/cow5.png",
-    "https://i.postimg.cc/RVQCW1p6/creepy3.png",
-    "https://i.postimg.cc/253C9skh/creepy4.png",
-    "https://i.postimg.cc/wjw6Vqp9/creepy5.png",
-    "https://i.postimg.cc/pdkqrSzG/creepy2.png",
-    "https://i.postimg.cc/sXXKhJJV/cute1.png",
-    "https://i.postimg.cc/NMzD7rNR/cute3.png",
-    "https://i.postimg.cc/5yQ3PNGT/cute4.png",
-    "https://i.postimg.cc/7hzR5Vx5/cow1.png",
-    "https://i.postimg.cc/hPFwHHrT/cow2.png",
-    "https://i.postimg.cc/GhkNrq7N/cow4.png",
-    "https://i.postimg.cc/L82WsLGs/creepy6.png",
-    "https://i.postimg.cc/dQZpNq8J/cute5.png",
-    "https://i.postimg.cc/Z5HMv0hx/cute6.png"
+"https://herbnona.github.io/images/ghosts/cow5.png",
+"https://herbnona.github.io/images/ghosts/creepy3.png",
+"https://herbnona.github.io/images/ghosts/creepy4.png",
+"https://herbnona.github.io/images/ghosts/creepy5.png",
+"https://herbnona.github.io/images/ghosts/creepy2.png",
+"https://herbnona.github.io/images/ghosts/cute1.png",
+"https://herbnona.github.io/images/ghosts/cute3.png",
+"https://herbnona.github.io/images/ghosts/cute4.png",
+"https://herbnona.github.io/images/ghosts/cow1.png",
+"https://herbnona.github.io/images/ghosts/cow2.png",
+"https://herbnona.github.io/images/ghosts/cow4.png",
+"https://herbnona.github.io/images/ghosts/creepy6.png",
+"https://herbnona.github.io/images/ghosts/cute5.png",
+"https://herbnona.github.io/images/ghosts/cute6.png"
 
 ];
 
