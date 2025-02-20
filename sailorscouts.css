@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-link {
-    color: #fff;
+    color: #281b23;
     text-transform: lowercase;
     font-size: 11px;
     letter-spacing: 3px;
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 #videowrap .embed-responsive {
     border: 1px solid;
     border-top: none;
-    border-color: rgba(0,0,0,.8);
+    border-color: #fbedf7;
 }
 
 #userlist::before {
@@ -237,7 +237,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
+    box-shadow: #281b23 2px 2px 0 0, #000 2px 2px 0 1px;
     color: #000;
     transform: translate(2px, 2px);
 }
@@ -297,10 +297,10 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #chatline {
-    background: rgba(0,0,0,.8) !important;
+    background: #fbedf7 !important;
     border-color: #231A20;
     border-top: none;
-    color: #fff;
+    color: #281b23;
     letter-spacing: 1px;
     font-size: 13px;
 }
@@ -345,7 +345,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_guest {
-    color: #fff !important;
+    color: #281b23 !important;
 }
 
 .server-whisper {
@@ -353,7 +353,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .profile-box, .user-dropdown {
-    background-color: rgba(0,0,0,.8) !important;
+    background-color: #fbedf7 !important;
     color: #F8FAF0;
     font-size: 11px;
     letter-spacing: 2px;
@@ -365,7 +365,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .glyphicon-time {
-    color: #fff;
+    color: #281b23;
     padding-right: 2px;
 }
 
@@ -380,7 +380,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 .queue_entry {
     background: rgba(0,0,0,.4);
-    border-color: rgba(0,0,0,.8);
+    border-color: #fbedf7;
     padding: 0px 8px 8px;
 }
 
@@ -402,7 +402,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active {
-    background: rgba(0,0,0,.8);
+    background: #fbedf7;
 }
 
 .queue_entry.queue_active a {
@@ -438,7 +438,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 .videolist .btn:hover, .videolist .btn:focus {
     background: #55678B !important;
     border-color: #000;
-    color: #fff;
+    color: #281b23;
     box-shadow: 0px 0px 0px;
     top: 1px;
     left: 2px;
@@ -447,7 +447,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
     background: #55678B    !important;
     border-color: #000;
-    color: #fff;
+    color: #281b23;
     box-shadow: 0px 0px 0px 0px;
     top: 1px;
     left: 1px;
@@ -461,7 +461,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 #rightpane-inner input.form-control[type="text"] {
     background-color: #55678b8a !important;
     border-radius: 0;
-    border-color: rgba(0,0,0,.8);
+    border-color: #fbedf7;
     color: rgba(225,225,225,.8);
     width: 98%;
 }
@@ -479,11 +479,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #plmeta {
-    border-color: rgba(0,0,0,.8);
+    border-color: #fbedf7;
     color: #8191B1;
     font-size: 11px;
     letter-spacing: 3px;
-    background: rgba(0,0,0,.8);
+    background: #fbedf7;
     padding: 2px 4px;
     text-shadow: none;
 }
@@ -518,7 +518,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #guestlogin > input {
-    border-color: rgba(0,0,0,.8);
+    border-color: #fbedf7;
     border-top: none;
     letter-spacing: 2px;
     font-size: 12px;
@@ -564,7 +564,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
     background: #181411d9 !important;
-    color: #fff;
+    color: #281b23;
 }
 
 #pollwrap .well h3 {
