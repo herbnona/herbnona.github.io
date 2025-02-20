@@ -13,10 +13,13 @@
 ** #231A20 - raisin - borders and text on light bg
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 /* Hide items from seasonal themes */
 .effect {
     display: none;
 }
+
 
 /* Main Styles */
 * { text-shadow: none !important; }
@@ -27,14 +30,15 @@
 }
 
 @keyframes blink {
-    0% { opacity: 0 }
-    50% { opacity: 1 }
-    100% { opacity: 0 }
+    0% { opacity: 50% }
+    50% { opacity: 100% }
+    100% { opacity: 50% }
 }
  
 body {
     background: url('images/valentines-darkmode.png') #322B5F;
     cursor: url('images/cowhearts.png'), auto;
+    font-family: "Cutive Mono", serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -134,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
 #userlist::before {
     content: 'online now!';
     font-style: italic;
-    animation: blink 1.5s infinite;
+    animation: blink 4s infinite;
 }
 
 #userlist, #messagebuffer {
