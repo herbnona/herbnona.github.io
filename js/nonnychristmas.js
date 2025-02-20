@@ -85,8 +85,9 @@ var newthemeSelect = [
     ["Moomin Default", "/css/themes/slate.css", "https://herbnona.github.io/nonny.css"],
     ["Strawbentines - Valentine's Day Light Mode", "/css/themes/slate.css", "https://herbnona.github.io/strawbentines.css"],
     ["Dreamentines - Valentine's Day Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/valentinesdarkmode.css"],
-    ["Summer Bubble - Summer Light Mode", "/css/themes/slate.css", "https://herbnona.github.io/summerbubble.css"],
+    ["Summer Bubble - Summer Light Mode", "/css/themes/slate.css", "htatps://herbnona.github.io/summerbubble.css"],
     ["Summer Nights - Summer Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/summernights.css"],
+    ["Age of Aquarium", "/css/themes/slate.css", "https://herbnona.github.io/age-of-aquarium.css"],
     ["Moomin Autumn", "/css/themes/slate.css", "https://herbnona.github.io/autumn.css"],
     ["Halloween", "/css/themes/slate.css", "https://herbnona.github.io/halloween.css"],
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],
@@ -219,7 +220,7 @@ function prepareMessage(msg) {
         if (msg.indexOf("!8ball") == 0) {
             // magic 8 ball function, if message begins with !8ball
             rnd=a=Math.round(Math.random()*(AskAnswers_Array.length-1));
-            msg='🎱 shake shake shake 🎱  ✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧ ｡･:*:･ﾟ★,｡･:*:･ﾟ☆ \n' + AskAnswers_Array[rnd];
+            msg='🎱 shake shake shake 🎱  . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. \n' + AskAnswers_Array[rnd];
         } else if (msg.indexOf("!vend") == 0) {
             // vending machine function, if message begins with !vend
             rnd=a=Math.round(Math.random()*(emotes_Array.length-1));

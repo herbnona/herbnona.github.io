@@ -236,7 +236,7 @@ function prepareMessage(msg) {
         if (msg.indexOf("!8ball") == 0) {
             // magic 8 ball function, if message begins with !8ball
             rnd=a=Math.round(Math.random()*(AskAnswers_Array.length-1));
-            msg='🎱 shake shake shake 🎱  ✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧ ｡･:*:･ﾟ★,｡･:*:･ﾟ☆ \n' + AskAnswers_Array[rnd];
+            msg='🎱 shake shake shake 🎱  . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. \n' + AskAnswers_Array[rnd];
         } else if (msg.indexOf("!vend") == 0) {
             // vending machine function, if message begins with !vend
             rnd=a=Math.round(Math.random()*(emotes_Array.length-1));
