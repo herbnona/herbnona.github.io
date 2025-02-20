@@ -6,14 +6,14 @@
 ** #E47792 - shimmering blush - disconnect
 ** #281b23 - raisin black - chat text and pane text
 ** #D68B8C - old rose - buttons
-** #55678B - queen blue - control buttons 
-** #BDD9BF - turquoise green - reconnect, button hovers, and default username
+** #69306D - queen blue - control buttons 
+** #f4cf7e - jasmine - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
 ** #181411 - smokey black - transparent backgrounds
 ** #231A20 - raisin - borders and text on light bg
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Caslon+Display&display=swap');
 
 /* Hide items from seasonal themes */
 .effect {
@@ -123,8 +123,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-right-radius: 0;
     padding: 10px 18px;
     height: 41px;
-    background: #55678B;
-    color: #281b23;
+    background: #69306D;
+    color: #fbedf7;
     letter-spacing: 1px;
     font-size: 14px;
     text-transform: lowercase;
@@ -195,10 +195,10 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     color: #000;
     cursor: pointer;
     display: inline-block;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 400;
-    letter-spacing: 2px;
-    line-height: 16px;
+    letter-spacing: 1px;
+    line-height: 18px;
     margin: 0 5px 0 0;
     overflow: visible;
     padding: 5px 14px;
@@ -221,7 +221,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:hover {
-    background: #BDD9BF;
+    background: #f4cf7e;
     color: #000;
     text-decoration: none;
     text-shadow: none;
@@ -275,11 +275,12 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-    color: #FBD3DB;
+    color: #69306D;
 }
 
 .username {
-    color: #BDD9BF;
+    color: #f4cf7e;
+    font-family: "Libre Caslon Display", serif;
 }
 
 #messagebuffer {
@@ -411,7 +412,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-    background: #55678B !important;
+    background: #69306D !important;
 }
 
 .videolist {
@@ -430,13 +431,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 10px;
     border-radius: 0px;
     border: 0px;
-    background: #55678B !important;
+    background: #69306D !important;
     box-shadow: 0px 0px 0px;
     color: #281b23;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-    background: #55678B !important;
+    background: #69306D !important;
     border-color: #000;
     color: #281b23;
     box-shadow: 0px 0px 0px;
@@ -445,7 +446,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }    
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-    background: #55678B    !important;
+    background: #69306D    !important;
     border-color: #000;
     color: #281b23;
     box-shadow: 0px 0px 0px 0px;
@@ -459,7 +460,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-    background-color: #55678b8a !important;
+    background-color: #69306D8a !important;
     border-radius: 0;
     border-color: #fbedf7;
     color: rgba(225,225,225,.8);
@@ -559,7 +560,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-    background: #55678B96;
+    background: #69306D96;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
@@ -580,8 +581,8 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Server Messages */
 .server-msg-reconnect {
-    border-color: #BDD9BF ;
-    color: #BDD9BF ;
+    border-color: #f4cf7e ;
+    color: #f4cf7e ;
 }
 
 .server-msg-disconnect {
@@ -617,7 +618,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-    background-color: #55678Bc2 !important;
+    background-color: #69306Dc2 !important;
     border-radius: 0;
 }
 
