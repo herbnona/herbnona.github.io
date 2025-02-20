@@ -4,8 +4,8 @@
 /* Colour Palette 
 ** #FBD3DB - mimi pink - background, emote popup, notifs
 ** #E47792 - shimmering blush - disconnect
-** #DFF2D8 - nyanza - chat text and pane text
-** #FCBFB7 - melon - buttons
+** #281b23 - raisin black - chat text and pane text
+** #D68B8C - old rose - buttons
 ** #55678B - queen blue - control buttons 
 ** #BDD9BF - turquoise green - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
@@ -36,7 +36,7 @@
 }
  
 body {
-    background: url('images/sailormoonpink.jpg') #FBD3DB;
+    background: url('backgrounds/sailormoonpink.jpg') #FBD3DB;
     cursor: url('images/cowhearts.png'), auto;
     font-family: "Cutive Mono", serif;
 }
@@ -46,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
-    color: #DFF2D8;
+    color: #281b23;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
     padding: 10px 18px;
     height: 41px;
     background: #55678B;
-    color: #DFF2D8;
+    color: #281b23;
     letter-spacing: 1px;
     font-size: 14px;
     text-transform: lowercase;
@@ -186,7 +186,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Buttons */
 .btn {
     appearance: button;
-    background-color: #FCBFB7;
+    background-color: #D68B8C;
     background-image: none;
     border: 1px solid #000;
     border-radius: 4px;
@@ -213,7 +213,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:focus {
-    background-color: #FCBFB7;
+    background-color: #D68B8C;
     color: #000;
     outline: 0;
     text-decoration: none;
@@ -228,7 +228,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .open>.dropdown-toggle.btn-default {
-    background-color: #FCBFB7;
+    background-color: #D68B8C;
     border: 1px solid #000;
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     color: #000;
@@ -283,8 +283,8 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #messagebuffer {
-    background: rgba(0,0,0,.7);
-    color: #DFF2D8;
+    background: #fbedf7;
+    color: #281b23;
     font-size: 13px;
 }
 
@@ -319,7 +319,8 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* User Pane */
 #userlist {
-    background: rgba(0,0,0,.4);
+    background: url('/backgrounds/duvetprint.jpg');
+    background-size: cover;
     padding-left: 18px;
 }
 
@@ -328,7 +329,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner {
-    color: #DFF2D8 !important;
+    color: #281b23 !important;
 }
 
 .userlist_op {
@@ -414,7 +415,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .videolist {
-    color: #DFF2D8;
+    color: #281b23;
 }
 
 #queue_next::before {
@@ -431,7 +432,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     border: 0px;
     background: #55678B !important;
     box-shadow: 0px 0px 0px;
-    color: #DFF2D8;
+    color: #281b23;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
@@ -525,7 +526,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-    color: #FCBFB7;
+    color: #D68B8C;
     font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
@@ -568,7 +569,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 #pollwrap .well h3 {
     margin-top: 0;
-    color: #DFF2D8;
+    color: #281b23;
     font-size: 18px;
 }
 
@@ -622,12 +623,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .modal-body .pagination {
     border-radius: 0;
-    background: #FCBFB7;
+    background: #D68B8C;
     text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-    background: #FCBFB7;
+    background: #D68B8C;
     letter-spacing: 2px;
     font-size: 12px;
     color: #000;
