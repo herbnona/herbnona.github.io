@@ -13,7 +13,7 @@
 ** #231A20 - raisin - borders and text on light bg
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Caslon+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
 
 /* Hide items from seasonal themes */
 .effect {
@@ -138,7 +138,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #userlist::before {
     content: 'online now!';
+    color: #F2538D;
+    font-family: "Libre Caslon Text", serif;
     font-style: italic;
+    font-weight: 700;
     animation: blink 4s infinite;
 }
 
@@ -280,7 +283,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 .username {
     color: #f4cf7e;
-    font-family: "Libre Caslon Display", serif;
+    font-family: "Libre Caslon Text", serif;
 }
 
 #messagebuffer {
