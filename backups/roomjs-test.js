@@ -27,7 +27,7 @@ function setCookie(name,value,days) {
         var expires = "; expires=" + date.toUTCString();
         var maxage = "; max-age=" + (days * 86400000);
     }
-    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/moovieroom";
+    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/theherbgarden";
 }
 
 /**** Chat Bot variables ****/
@@ -281,7 +281,7 @@ function prepareMessage(msg) {
         } else if (msg.indexOf("!guide") == 0) {	
             msg='Hosting a Moovie Night: https://moovieroom.github.io/moovie-guide\nHosting a YouTube Night: https://moovieroom.github.io/youtube-guide';	
         } else if (msg.indexOf("!unsync") == 0) {	
-            msg='1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
+            msg='\n1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
         } else if (msg.indexOf("!calendar") == 0) {	
             msg='See any upcoming events and subsribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
         } else if (msg.indexOf("!hosthelper") == 0) {	

@@ -60,12 +60,19 @@ imagepopup.appendChild(imgTag);
 /**** END - Chat Bot variables ****/
 
 /**** Custom Buttons ****/
+const heartbutton = document.createElement('button');
+const leftcontrols = document.getElementById('leftcontrols');
+heartbutton.innerText = '♥ stop hearts';
+heartbutton.id = 'heartbutton';
+heartbutton.className = 'btn btn-sm btn-default heartbutton effect';
+
 const modeswitch = document.createElement('button');
 modeswitch.innerText = '☼ / ☾';
 modeswitch.id = 'modebutton';
 modeswitch.className = 'btn btn-sm btn-default modebutton effect';
 
 leftcontrols.appendChild(modeswitch);
+leftcontrols.appendChild(heartbutton);
 
 /**** END - Custom Buttons ****/
 
@@ -279,13 +286,7 @@ function prepareMessage(msg) {
         } else if (msg.indexOf("!rules") == 0) {	
             msg='\n⚘ Be nice\n⚘ Do not sperg out\n⚘ Right click user to ignore\n⚘ No males';	
         } else if (msg.indexOf("!guide") == 0) {	
-            msg='Hosting a Moovie Night: https://moovieroom.github.io/moovie-guide\nHosting a YouTube Night: https://moovieroom.github.io/youtube-guide';	
-        } else if (msg.indexOf("!unsync") == 0) {	
-            msg='1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
-        } else if (msg.indexOf("!calendar") == 0) {	
-            msg='See any upcoming events and subsribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
-        } else if (msg.indexOf("!hosthelper") == 0) {	
-            msg='Schedule your event and generate an announcement post here: https://moovieroom.github.io/host-helper';	
+            msg='Hosting How-To: https://docs.google.com/document/d/1L-s2k-Pac1_QvM8T25PirP6G5JslF4gqWeY0muQ5vQM/edit?usp=sharing';	
         } else {	
             COMMAND=false;	
         }	
@@ -383,6 +384,18 @@ $("#chatbtn").on("click", function() {
     }
 });
 
+$("#heartbutton").on("click", function() {
+    const heartcontain = document.getElementById("hearts");
+    if (heartcontain.style.display !== 'none') {
+        heartcontain.style.display = 'none';
+        heartbutton.innerText = '♥ heart party';
+    }
+    else {
+        heartcontain.style.display = 'block';
+        heartbutton.innerText = '♥ stop hearts';
+    }
+});
+
 $("#modebutton").on("click", function() {
     if (modeswitch.innerText == '☾') {
         swapStyleSheet("https://herbnona.github.io/valentinesdarkmode.css");
@@ -396,5 +409,27 @@ $("#modebutton").on("click", function() {
     }
 });
 
+function newHeart () {
+    var hearts = $('.heart');
+    if (hearts.length >= 24) return setTimeout(newHeart, 1000);
+    var c = $('.heart-container:first').clone();
+    var anims = ['swing', 'spin'];
+    var a = anims[Math.round(Math.random())];
+    c.find('.heart')
+                  .css('opacity', 0.2 + Math.random() * 0.8)
+                  .css('-webkit-animation-name', a)
+                  .css('-moz-animation-name', a);
+    c.css('left', (10 + Math.random() * ($('body').innerWidth() - 10)) + 'px');
+    c.css('-webkit-animation-name', 'fall');
+    c.css('-webkit-animation-duration', (4 + Math.random() * 14) + 's');
+    c.css('-webkit-transform', 'scale(' + (0.4 + Math.random() * 2) + ')');
+    c.css('-moz-animation-duration', (4 + Math.random() * 14) + 's');
+    c.css('-moz-transform', 'scale(' + (0.4 + Math.random() * 2) + ')');
+    $('#hearts').append(c);
+    c.bind('animationend', function () { c.remove(); });
+    c.bind('webkitAnimationEnd', function () { c.remove(); });
+    setTimeout(newHeart, 200);
+}
 setTimeout(styleCookieCheck, 100);
+setTimeout(newHeart, 200);
 //setTimeout(fetchTodayEvent, 100);
