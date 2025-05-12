@@ -27,7 +27,8 @@
 }
 
 body {
-    background: url('backgrounds/eurovisionbg.jpg') #0B1E77;
+    background: url('backgrounds/eurovisionbg.jpg') #0B1E77 no-repeat;
+    background-size: 100vw 100vh;
     cursor: url('cursors/dronnie.png'), auto;
 }
 
