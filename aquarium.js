@@ -236,7 +236,7 @@ function prepareMessage(msg) {
         if (msg.indexOf("!8ball") == 0) {
             // magic 8 ball function, if message begins with !8ball
             rnd=a=Math.round(Math.random()*(AskAnswers_Array.length-1));
-            msg='🎱 shake shake shake 🎱  . ݁₊ ⊹ . ݁ ⟡ ݁ . ⊹ ₊ ݁. \n' + AskAnswers_Array[rnd];
+            msg='🎱 shake shake shake 🎱  ✧･ﾟ: *✧･ﾟ:* *:･ﾟ✧*:･ﾟ✧ ｡･:*:･ﾟ★,｡･:*:･ﾟ☆ \n' + AskAnswers_Array[rnd];
         } else if (msg.indexOf("!vend") == 0) {
             // vending machine function, if message begins with !vend
             rnd=a=Math.round(Math.random()*(emotes_Array.length-1));
@@ -261,18 +261,6 @@ function prepareMessage(msg) {
             } else {
                 msg='turbobonk \n' + heldMsg + ' got bonked!';
             }
-        } else if (msg.indexOf("!shuffle") == 0) {
-            if (hasPermission("playlistmove")) {
-                var leader = queue.getElementsByClassName("queue_active")[0].getAttribute("title");
-                if (msg.indexOf("@") > 0) {
-                    leader = msg.split('@')[1];
-                } else {
-                    leader = leader.replace('Added by: ','');
-                }
-                smartShuffle(leader);
-            } else {
-                msg='You do not have permission to do that!';
-            }
         } else if (msg.indexOf("!time") == 0) {
             // current local time function, if message begins with !time
             var h = new Date().getHours();
@@ -287,7 +275,13 @@ function prepareMessage(msg) {
         } else if (msg.indexOf("!rules") == 0) {	
             msg='\n⚘ Be nice\n⚘ Do not sperg out\n⚘ Right click user to ignore\n⚘ No males';	
         } else if (msg.indexOf("!guide") == 0) {	
-            msg='Hosting How-To: https://docs.google.com/document/d/1L-s2k-Pac1_QvM8T25PirP6G5JslF4gqWeY0muQ5vQM/edit?usp=sharing';	
+            msg='Hosting a Moovie Night: https://moovieroom.github.io/moovie-guide\nHosting a YouTube Night: https://moovieroom.github.io/youtube-guide';	
+        } else if (msg.indexOf("!unsync") == 0) {	
+            msg='\n1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
+        } else if (msg.indexOf("!calendar") == 0) {	
+            msg='See any upcoming events and subsribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
+        } else if (msg.indexOf("!hosthelper") == 0) {	
+            msg='Schedule your event and generate an announcement post here: https://moovieroom.github.io/host-helper';	
         } else {	
             COMMAND=false;	
         }	
