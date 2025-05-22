@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
   
 
 .darkmode {
-    display: none !important;
+    display: none;
 }
 
 #chatheader, #videowrap-header {
