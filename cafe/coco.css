@@ -6,7 +6,7 @@
 ** #E47792 - shimmering blush - disconnect
 ** #F6EEBA - vanilla - chat text and pane text
 ** #6ABFA5 - keppel - buttons
-** #914B3B - chestnut - control buttons, pane headers
+** #C47E6E - old rose - control buttons, pane headers
 ** #529E45 - pigment green - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
 ** #181411 - smokey black - transparent backgrounds
@@ -136,7 +136,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 8px;
-    background: #914B3B;
+    background: #C47E6E;
     color: #F6EEBA;
     letter-spacing: 2px;
     font-size: 13px;
@@ -416,7 +416,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-    background: #914B3B !important;
+    background: #C47E6E !important;
 }
 
 .videolist {
@@ -435,13 +435,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 10px;
     border-radius: 0px;
     border: 0px;
-    background: #914B3B !important;
+    background: #C47E6E !important;
     box-shadow: 0px 0px 0px;
     color: #F6EEBA;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-    background: #914B3B !important;
+    background: #C47E6E !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px;
@@ -450,7 +450,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }    
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-    background: #914B3B    !important;
+    background: #C47E6E    !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px 0px;
@@ -464,7 +464,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-    background-color: #914B3B8a !important;
+    background-color: #C47E6E8a !important;
     border-radius: 0;
     border-color: rgba(42,31,45,.88);
     color: rgba(225,225,225,.8);
@@ -531,7 +531,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-    color: #914B3B;
+    color: #C47E6E;
     font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
@@ -564,7 +564,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-    background: #914B3B96;
+    background: #C47E6E96;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
@@ -622,18 +622,18 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-    background-color: #914B3Bc2 !important;
+    background-color: #C47E6Ec2 !important;
     border-radius: 0;
 }
 
 .modal-body .pagination {
     border-radius: 0;
-    background: #914B3B;
+    background: #C47E6E;
     text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-    background: #914B3B;
+    background: #C47E6E;
     letter-spacing: 2px;
     font-size: 12px;
     color: #000;
