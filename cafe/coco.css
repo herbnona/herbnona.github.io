@@ -5,7 +5,7 @@
 ** #2A1F2D - dark purple - background, emote popup, notifs
 ** #E47792 - shimmering blush - disconnect
 ** #F6EEBA - vanilla - chat text and pane text
-** #D68B8C - old rose - buttons
+** #C17767 - old rose - buttons
 ** #6ABFA5 - keppel - control buttons 
 ** #529E45 - pigment green - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
@@ -15,6 +15,9 @@
 
 /* Main Styles */
 * { text-shadow: none !important; }
+
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 @keyframes swing {
     0%, 100% { transform: rotate(-10deg); }
@@ -190,7 +193,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Buttons */
 .btn {
     appearance: button;
-    background-color: #D68B8C;
+    background-color: #C17767;
     background-image: none;
     border: 1px solid #000;
     border-radius: 4px;
@@ -217,7 +220,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:focus {
-    background-color: #D68B8C;
+    background-color: #C17767;
     color: #000;
     outline: 0;
     text-decoration: none;
@@ -232,7 +235,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .open>.dropdown-toggle.btn-default {
-    background-color: #D68B8C;
+    background-color: #C17767;
     border: 1px solid #000;
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     color: #000;
@@ -528,7 +531,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-    color: #D68B8C;
+    color: #C17767;
     font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
@@ -625,12 +628,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .modal-body .pagination {
     border-radius: 0;
-    background: #D68B8C;
+    background: #C17767;
     text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-    background: #D68B8C;
+    background: #C17767;
     letter-spacing: 2px;
     font-size: 12px;
     color: #000;
