@@ -287,9 +287,17 @@ function prepareMessage(msg) {
             msg='See any upcoming events and subsribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
         } else if (msg.indexOf("!hosthelper") == 0) {	
             msg='Schedule your event and generate an announcement post here: https://moovieroom.github.io/host-helper';	
+        } else if (msg.indexOf("!playlists") == 0) {	
+            msg='Tunesday playlists are saved here: https://moovieroom.github.io/tunesday-playlists';	
+        } else if (msg.indexOf("!blocked") == 0) {	
+            msg='`' + $(".queue_active a").html() + '`' + ' is region blocked. Host: please skip this video. ' + $(".queue_active").attr('title').replace('Added by: ','') + ', please find an alternate video link if possible.';	
         } else {	
             COMMAND=false;	
         }	
+    }
+    else if (UI_UserCommands=="1" && msg.indexOf("blocked*") == 0) {
+        COMMAND=true;
+        msg='`' + $(".queue_active a").html() + '`' + ' is region blocked. Host: please skip this video. ' + $(".queue_active").attr('title').replace('Added by: ','') + ', please find an alternate video link if possible.';	
     }
     return msg;
 }
