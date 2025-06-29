@@ -30,6 +30,10 @@ function setCookie(name,value,days) {
     document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/theherbgarden";
 }
 
+const headers = new Headers();
+const d = new Date();
+let day = d.getDay();
+
 /**** Chat Bot variables ****/
 // [!8ball] Magic 8 Ball responses
 const AskAnswers_Array = [
@@ -39,11 +43,6 @@ const AskAnswers_Array = [
 // [!vend] vending machine prizes 
 const emotes_Array = [
     "angelcake","burger1","cherrypie","cheese","drink1","burger2","icecream","cake2","milk1","milk2","milk3","milk4","pizza*","zebracake","junkfood","tea1","sushi1","sushi2","riceball1","snack1","ramen1","ramen2","sake1","kpop1","milkbone","snowcone","cheekystrawb","pancakes1","chocolates1","coffee1","vendsnack1","vendsnack2","vendsnack3","vendsnack4","vendsnack5","vendsnack6","vendsnack7","vendsnack8","vendsnack9","vendsnack10","vendsnack11","vendsnack12","vendsnack13","vendsnack14","vendsnack15","vendsnack16","vendsnack17","vendsnack18","vendsnack19","vendsnack20","vendsnack21","vendsnack22","vendsnack23","vendsnack24","vendsnack25","vendsnack26","vendsnack27","vendsnack28","vendsnack29","vendsnack30","vendsnack31","vendsnack32","vendsnack33","vendsnack34","vendsnack35","vendsnack36","vendsnack37","vendsnack38","vendsnack39","vendsnack40","vendtoy1","vendtoy2","vendtoy3","vendtoy4","vendtoy5","vendtoy6","vendtoy7","vendtoy8","vendtoy9","vendtoy10","vendtoy11","vendtoy12","vendtoy13","vendtoy14","vendtoy15","vendtoy16","vendtoy17"
-];
-
-// [!herb] herb responses
-const herbbot_Array = [
-    "y'all.","lol I'm old","vendbot I swear to god","why do my own creations forsake me","play D'Angelo","let she who hath not read the Frollo doujin cast the first stone","snacktime","let's get baja blasted","biiiitch","I'm sleep","what if Trisha Paytas covered this song","why does he look like that"
 ];
 
 const queue = document.getElementById("queue");
@@ -60,12 +59,13 @@ imagepopup.appendChild(imgTag);
 /**** END - Chat Bot variables ****/
 
 /**** Custom Buttons ****/
-const modeswitch = document.createElement('button');
-modeswitch.innerText = '☼ / ☾';
-modeswitch.id = 'modebutton';
-modeswitch.className = 'btn btn-sm btn-default modebutton effect';
+const fishbutton = document.createElement('button');
+const leftcontrols = document.getElementById('leftcontrols');
+fishbutton.innerText = '𓆟 no fish';
+fishbutton.id = 'fishbutton';
+fishbutton.className = 'btn btn-sm btn-default fishbutton effect';
 
-leftcontrols.appendChild(modeswitch);
+leftcontrols.appendChild(fishbutton);
 
 /**** END - Custom Buttons ****/
 
@@ -88,6 +88,7 @@ var newthemeSelect = [
     ["Summer Bubble - Summer Light Mode", "/css/themes/slate.css", "htatps://herbnona.github.io/summerbubble.css"],
     ["Summer Nights - Summer Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/summernights.css"],
     ["Age of Aquarium", "/css/themes/slate.css", "https://herbnona.github.io/age-of-aquarium.css"],
+    ["Eurovision Mode", "/css/themes/slate.css", "https://herbnona.github.io/eurovisionmode.css"],
     ["Moomin Autumn", "/css/themes/slate.css", "https://herbnona.github.io/autumn.css"],
     ["Halloween", "/css/themes/slate.css", "https://herbnona.github.io/halloween.css"],
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],
@@ -121,15 +122,15 @@ function swapStyleSheet(sheet) {
 function styleCookieCheck() {
     if (document.cookie.indexOf('customtheme') > -1) {
         let stylecookie = getCookie('customtheme');
-        if (stylecookie == 'https://herbnona.github.io/winter.css' || stylecookie == 'https://herbnona.github.io/herbalchristmas.css') {
-            swapStyleSheet('https://herbnona.github.io/strawbentines.css');
-            setCookie('customtheme', 'https://herbnona.github.io/strawbentines.css', 30);
+        if (stylecookie == 'https://herbnona.github.io/nonny.css' || stylecookie == 'https://herbnona.github.io/dreamentines.css') {
+            swapStyleSheet('https://herbnona.github.io/age-of-aquarium.css');
+            setCookie('customtheme', 'https://herbnona.github.io/age-of-aquarium.css', 30);
         } else {
             swapStyleSheet(stylecookie);
         }
     } else {
-        swapStyleSheet('https://herbnona.github.io/strawbentines.css');
-        setCookie('customtheme', 'https://herbnona.github.io/strawbentines.css', 30);
+        swapStyleSheet('https://herbnona.github.io/nonny.css');
+        setCookie('customtheme', 'https://herbnona.github.io/nonny.css', 30);
     }
 }
 
@@ -383,16 +384,45 @@ $("#chatbtn").on("click", function() {
     }
 });
 
-$("#modebutton").on("click", function() {
-    if (modeswitch.innerText == '☾') {
-        swapStyleSheet("https://herbnona.github.io/valentinesdarkmode.css");
-        modeswitch.innerText = '☼';
-    } else if (modeswitch.innerText == '☼'){
-        modeswitch.innerText = '☾'
-        swapStyleSheet("https://herbnona.github.io/strawbentines.css");
-    } else {
-        swapStyleSheet("https://herbnona.github.io/valentinesdarkmode.css");
-        modeswitch.innerText = '☼';
+async function idSave(ytID) {
+    let body = JSON.stringify({"ytID":ytID})
+    const response = await fetch("https://app.windmill.dev/api/w/moovieroom/jobs/run_wait_result/f/u/herbnona/ytID_capture", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer x3zyLJri9WHLYoMfhfsq7kqFNziGMatc"
+        },
+        body
+    })
+}
+
+// add to queue on tuesdays, save yt id
+$("#queue_end").on("click", function() {
+    let yturl=$("#mediaurl").val();
+    let ytID=yturl.split('?v=')[1]
+    if (day == 2) {
+        idSave(ytID);
+    }
+});
+
+$("#queue_next").on("click", function() {
+    let yturl=$("#mediaurl").val();
+    let ytID=yturl.split('?v=')[1]
+    if (day == 2) {
+        idSave(ytID);
+    }
+});
+
+
+$("#fishbutton").on("click", function() {
+    const fishcontain = document.getElementById("fish-container");
+    if (fishcontain.style.display !== 'none') {
+        fishcontain.style.display = 'none';
+        fishbutton.innerText = '𓆟 go fish';
+    }
+    else {
+        fishcontain.style.display = 'block';
+        fishbutton.innerText = '𓆟 no fish';
     }
 });
 

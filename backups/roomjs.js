@@ -30,6 +30,10 @@ function setCookie(name,value,days) {
     document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/moovieroom";
 }
 
+const headers = new Headers();
+const d = new Date();
+let day = d.getDay();
+
 /**** Chat Bot variables ****/
 // [!8ball] Magic 8 Ball responses
 const AskAnswers_Array = [
@@ -382,6 +386,36 @@ $("#chatbtn").on("click", function() {
         $("#chatline").val('');
     }
 });
+
+async function idSave(ytID) {
+    let body = JSON.stringify({"ytID":ytID})
+    const response = await fetch("https://app.windmill.dev/api/w/moovieroom/jobs/run_wait_result/f/u/herbnona/ytID_capture", {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": "Bearer x3zyLJri9WHLYoMfhfsq7kqFNziGMatc"
+        },
+        body
+    })
+}
+
+// add to queue on tuesdays, save yt id
+$("#queue_end").on("click", function() {
+    let yturl=$("#mediaurl").val();
+    let ytID=yturl.split('?v=')[1]
+    if (day == 2) {
+        idSave(ytID);
+    }
+});
+
+$("#queue_next").on("click", function() {
+    let yturl=$("#mediaurl").val();
+    let ytID=yturl.split('?v=')[1]
+    if (day == 2) {
+        idSave(ytID);
+    }
+});
+
 
 $("#modebutton").on("click", function() {
     if (modeswitch.innerText == '☾') {
