@@ -284,7 +284,7 @@ function prepareMessage(msg) {
         } else if (msg.indexOf("!unsync") == 0) {	
             msg='\n1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
         } else if (msg.indexOf("!calendar") == 0) {	
-            msg='See any upcoming events and subsribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
+            msg='See any upcoming events and subscribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
         } else if (msg.indexOf("!hosthelper") == 0) {	
             msg='Schedule your event and generate an announcement post here: https://moovieroom.github.io/host-helper';	
         } else if (msg.indexOf("!playlists") == 0) {	
@@ -407,7 +407,8 @@ async function idSave(ytID) {
 // add to queue on tuesdays, save yt id
 $("#queue_end").on("click", function() {
     let yturl=$("#mediaurl").val();
-    let ytID=yturl.split('?v=')[1]
+    let ytID=yturl.split('?v=')[1];
+    ytID=ytID.split('&')[0];
     if (day == 2) {
         idSave(ytID);
     }
@@ -415,7 +416,8 @@ $("#queue_end").on("click", function() {
 
 $("#queue_next").on("click", function() {
     let yturl=$("#mediaurl").val();
-    let ytID=yturl.split('?v=')[1]
+    let ytID=yturl.split('?v=')[1];
+    ytID=ytID.split('&')[0];
     if (day == 2) {
         idSave(ytID);
     }
