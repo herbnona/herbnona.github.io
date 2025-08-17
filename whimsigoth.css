@@ -7,7 +7,7 @@
 ** #E5DADA - timberwolf - chat text and pane text
 ** #55678B - earth yellow - buttons
 ** #3A4C7A - ylnmn blue - control buttons 
-** #322B5F - cool gray - reconnect, button hovers, and default username
+** #8788B2 - cool gray - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
 ** #181411 - smokey black - transparent backgrounds
 ** #231A20 - raisin - borders and text on light bg
@@ -204,7 +204,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:hover {
-    background: #322B5F;
+    background: #8788B2;
     color: #000;
     text-decoration: none;
     text-shadow: none;
@@ -261,7 +261,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .username {
-    color: #322B5F;
+    color: #8788B2;
 }
 
 #messagebuffer {
@@ -561,8 +561,8 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Server Messages */
 .server-msg-reconnect {
-    border-color: #322B5F ;
-    color: #322B5F ;
+    border-color: #8788B2 ;
+    color: #8788B2 ;
 }
 
 .server-msg-disconnect {

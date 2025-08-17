@@ -27,12 +27,8 @@ function setCookie(name,value,days) {
         var expires = "; expires=" + date.toUTCString();
         var maxage = "; max-age=" + (days * 86400000);
     }
-    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/theherbgarden";
+    document.cookie = name + "=" + (value || "")  + expires + maxage + "; path=/r/moovieroom";
 }
-
-const headers = new Headers();
-const d = new Date();
-let day = d.getDay();
 
 /**** Chat Bot variables ****/
 // [!8ball] Magic 8 Ball responses
@@ -43,6 +39,11 @@ const AskAnswers_Array = [
 // [!vend] vending machine prizes 
 const emotes_Array = [
     "angelcake","burger1","cherrypie","cheese","drink1","burger2","icecream","cake2","milk1","milk2","milk3","milk4","pizza*","zebracake","junkfood","tea1","sushi1","sushi2","riceball1","snack1","ramen1","ramen2","sake1","kpop1","milkbone","snowcone","cheekystrawb","pancakes1","chocolates1","coffee1","vendsnack1","vendsnack2","vendsnack3","vendsnack4","vendsnack5","vendsnack6","vendsnack7","vendsnack8","vendsnack9","vendsnack10","vendsnack11","vendsnack12","vendsnack13","vendsnack14","vendsnack15","vendsnack16","vendsnack17","vendsnack18","vendsnack19","vendsnack20","vendsnack21","vendsnack22","vendsnack23","vendsnack24","vendsnack25","vendsnack26","vendsnack27","vendsnack28","vendsnack29","vendsnack30","vendsnack31","vendsnack32","vendsnack33","vendsnack34","vendsnack35","vendsnack36","vendsnack37","vendsnack38","vendsnack39","vendsnack40","vendtoy1","vendtoy2","vendtoy3","vendtoy4","vendtoy5","vendtoy6","vendtoy7","vendtoy8","vendtoy9","vendtoy10","vendtoy11","vendtoy12","vendtoy13","vendtoy14","vendtoy15","vendtoy16","vendtoy17"
+];
+
+// [!herb] herb responses
+const herbbot_Array = [
+    "y'all.","lol I'm old","vendbot I swear to god","why do my own creations forsake me","play D'Angelo","let she who hath not read the Frollo doujin cast the first stone","snacktime","let's get baja blasted","biiiitch","I'm sleep","what if Trisha Paytas covered this song","why does he look like that"
 ];
 
 const queue = document.getElementById("queue");
@@ -59,7 +60,19 @@ imagepopup.appendChild(imgTag);
 /**** END - Chat Bot variables ****/
 
 /**** Custom Buttons ****/
+const heartbutton = document.createElement('button');
+const leftcontrols = document.getElementById('leftcontrols');
+heartbutton.innerText = '♥ stop hearts';
+heartbutton.id = 'heartbutton';
+heartbutton.className = 'btn btn-sm btn-default heartbutton effect';
 
+const modeswitch = document.createElement('button');
+modeswitch.innerText = '☼ / ☾';
+modeswitch.id = 'modebutton';
+modeswitch.className = 'btn btn-sm btn-default modebutton effect';
+
+leftcontrols.appendChild(modeswitch);
+leftcontrols.appendChild(heartbutton);
 
 /**** END - Custom Buttons ****/
 
@@ -82,9 +95,8 @@ var newthemeSelect = [
     ["Summer Bubble - Summer Light Mode", "/css/themes/slate.css", "htatps://herbnona.github.io/summerbubble.css"],
     ["Summer Nights - Summer Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/summernights.css"],
     ["Age of Aquarium", "/css/themes/slate.css", "https://herbnona.github.io/age-of-aquarium.css"],
-    ["Eurovision Mode", "/css/themes/slate.css", "https://herbnona.github.io/eurovisionmode.css"],
-    ["Whimsigoth Autumn", "/css/themes/slate.css", "https://herbnona.github.io/whimsigoth.css"],
     ["Moomin Autumn", "/css/themes/slate.css", "https://herbnona.github.io/autumn.css"],
+    ["Whimsigoth Autumn", "/css/themes/slate.css", "https://herbnona.github.io/whimsigoth.css"],
     ["Halloween", "/css/themes/slate.css", "https://herbnona.github.io/halloween.css"],
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],
     ["Hallosweets", "/css/themes/slate.css", "https://herbnona.github.io/hallosweets.css"],
@@ -270,24 +282,10 @@ function prepareMessage(msg) {
         } else if (msg.indexOf("!rules") == 0) {	
             msg='\n⚘ Be nice\n⚘ Do not sperg out\n⚘ Right click user to ignore\n⚘ No males';	
         } else if (msg.indexOf("!guide") == 0) {	
-            msg='Hosting a Moovie Night: https://moovieroom.github.io/moovie-guide\nHosting a YouTube Night: https://moovieroom.github.io/youtube-guide';	
-        } else if (msg.indexOf("!unsync") == 0) {	
-            msg='\n1. click options in the header.\n2. click the playback tab.\n3. uncheck the synchronize video playback box\n4. click save.';	
-        } else if (msg.indexOf("!calendar") == 0) {	
-            msg='See any upcoming events and subscribe anonymously to our calendar here: https://moovieroom.github.io/host-helper';	
-        } else if (msg.indexOf("!hosthelper") == 0) {	
-            msg='Schedule your event and generate an announcement post here: https://moovieroom.github.io/host-helper';	
-        } else if (msg.indexOf("!playlists") == 0) {	
-            msg='Tunesday playlists are saved here: https://moovieroom.github.io/tunesday-playlists';	
-        } else if (msg.indexOf("!blocked") == 0) {	
-            msg='`' + $(".queue_active a").html() + '`' + ' is region blocked. Host: please skip this video. ' + $(".queue_active").attr('title').replace('Added by: ','') + ', please find an alternate video link if possible.';	
+            msg='Hosting How-To: https://docs.google.com/document/d/1L-s2k-Pac1_QvM8T25PirP6G5JslF4gqWeY0muQ5vQM/edit?usp=sharing';	
         } else {	
             COMMAND=false;	
         }	
-    }
-    else if (UI_UserCommands=="1" && msg.indexOf("blocked*") == 0) {
-        COMMAND=true;
-        msg='`' + $(".queue_active a").html() + '`' + ' is region blocked. Host: please skip this video. ' + $(".queue_active").attr('title').replace('Added by: ','') + ', please find an alternate video link if possible.';	
     }
     return msg;
 }
@@ -379,37 +377,6 @@ $("#chatbtn").on("click", function() {
         }
         socket.emit("chatMsg", {msg:msg});
         $("#chatline").val('');
-    }
-});
-
-async function idSave(ytID) {
-    let body = JSON.stringify({"ytID":ytID})
-    const response = await fetch("https://app.windmill.dev/api/w/moovieroom/jobs/run_wait_result/f/u/herbnona/ytID_capture", {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": "Bearer x3zyLJri9WHLYoMfhfsq7kqFNziGMatc"
-        },
-        body
-    })
-}
-
-// add to queue on tuesdays, save yt id
-$("#queue_end").on("click", function() {
-    let yturl=$("#mediaurl").val();
-    let ytID=yturl.split('?v=')[1];
-    ytID=ytID.split('&')[0];
-    if (day == 2) {
-        idSave(ytID);
-    }
-});
-
-$("#queue_next").on("click", function() {
-    let yturl=$("#mediaurl").val();
-    let ytID=yturl.split('?v=')[1];
-    ytID=ytID.split('&')[0];
-    if (day == 2) {
-        idSave(ytID);
     }
 });
 
