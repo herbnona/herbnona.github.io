@@ -685,19 +685,27 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 /* Decor */
+.pillow-container {
+    height: 130vh;
+    width: 100vw;
+    position: fixed;
+    top:0;
+    left:0;
+}
+
 .pillows {
     bottom: 0;
-    position: fixed;
+    position: absolute;
+    height: 30vh;
+    max-height: 300px;
 }
 
 .pillows-left {
     left: 0;
-    width: 30vw;
 }
 
 .pillows-right {
-    left: 0;
-    width: 20vw;
+    right: 0;
 }
 
 
