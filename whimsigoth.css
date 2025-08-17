@@ -13,11 +13,6 @@
 ** #231A20 - raisin - borders and text on light bg
 */
 
-/* Hide items from seasonal themes */
-.effect {
-    display: none;
-}
-
 /* Main Styles */
 * { text-shadow: none !important; }
 
@@ -687,6 +682,22 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     display: flex;
     margin: 150px auto;
     text-align: center;
+}
+
+/* Decor */
+.pillows {
+    bottom: 0;
+    position: fixed;
+}
+
+.pillows-left {
+    left: 0;
+    width: 30vw;
+}
+
+.pillows-right {
+    left: 0;
+    width: 20vw;
 }
 
 
