@@ -2,12 +2,12 @@
 /** lovingly crafted by herbnona **/
 
 /* Colour Palette 
-** #322B5F - space cadet - background, emote popup, notifs
-** #E47792 - shimmering blush - disconnect
-** #DFF2D8 - nyanza - chat text and pane text
-** #FCBFB7 - melon - buttons
-** #55678B - queen blue - control buttons 
-** #BDD9BF - turquoise green - reconnect, button hovers, and default username
+** #312732 - raisin black - background, emote popup, notifs
+** #F15152 - imperial red - disconnect
+** #E5DADA - timberwolf - chat text and pane text
+** #55678B - earth yellow - buttons
+** #3A4C7A - ylnmn blue - control buttons 
+** #322B5F - cool gray - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
 ** #181411 - smokey black - transparent backgrounds
 ** #231A20 - raisin - borders and text on light bg
@@ -27,7 +27,7 @@
 }
 
 body {
-    background: url('backgrounds/whimsigoth-purple.jpg') #322B5F;
+    background: url('backgrounds/whimsigoth-purple.jpg') #312732;
     cursor: url('cursors/whimsigoth-cow.png'), auto;
 }
 
@@ -36,11 +36,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
-    color: #DFF2D8;
+    color: #E5DADA;
 }
 
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
-    background: #322B5F;
+    background: #312732;
     color: #F8FAF0;
 }
 
@@ -112,8 +112,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 8px;
-    background: #55678B;
-    color: #DFF2D8;
+    background: #3A4C7A;
+    color: #E5DADA;
     letter-spacing: 2px;
     font-size: 13px;
     text-transform: lowercase;
@@ -169,7 +169,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Buttons */
 .btn {
     appearance: button;
-    background-color: #FCBFB7;
+    background-color: #55678B;
     background-image: none;
     border: 1px solid #000;
     border-radius: 4px;
@@ -196,7 +196,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:focus {
-    background-color: #FCBFB7;
+    background-color: #55678B;
     color: #000;
     outline: 0;
     text-decoration: none;
@@ -204,14 +204,14 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:hover {
-    background: #BDD9BF;
+    background: #322B5F;
     color: #000;
     text-decoration: none;
     text-shadow: none;
 }
 
 .btn:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .open>.dropdown-toggle.btn-default {
-    background-color: #FCBFB7;
+    background-color: #55678B;
     border: 1px solid #000;
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     color: #000;
@@ -257,16 +257,16 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .timestamp {
-    color: #322B5F;
+    color: #312732;
 }
 
 .username {
-    color: #BDD9BF;
+    color: #322B5F;
 }
 
 #messagebuffer {
     background: rgba(0,0,0,.7);
-    color: #DFF2D8;
+    color: #E5DADA;
     letter-spacing: 1px;
     font-size: 13px;
 }
@@ -310,7 +310,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner {
-    color: #DFF2D8 !important;
+    color: #E5DADA !important;
 }
 
 .userlist_op {
@@ -392,11 +392,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-    background: #55678B !important;
+    background: #3A4C7A !important;
 }
 
 .videolist {
-    color: #DFF2D8;
+    color: #E5DADA;
 }
 
 #queue_next::before {
@@ -411,13 +411,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 10px;
     border-radius: 0px;
     border: 0px;
-    background: #55678B !important;
+    background: #3A4C7A !important;
     box-shadow: 0px 0px 0px;
-    color: #DFF2D8;
+    color: #E5DADA;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-    background: #55678B !important;
+    background: #3A4C7A !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px;
@@ -426,7 +426,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }    
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-    background: #55678B    !important;
+    background: #3A4C7A    !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px 0px;
@@ -440,7 +440,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-    background-color: #55678b8a !important;
+    background-color: #3A4C7A8a !important;
     border-radius: 0;
     border-color: rgba(0,0,0,.8);
     color: rgba(225,225,225,.8);
@@ -507,7 +507,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-    color: #FCBFB7;
+    color: #55678B;
     font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
@@ -540,7 +540,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-    background: #55678B96;
+    background: #3A4C7A96;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
@@ -550,7 +550,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 #pollwrap .well h3 {
     margin-top: 0;
-    color: #DFF2D8;
+    color: #E5DADA;
     font-size: 18px;
 }
 
@@ -561,19 +561,19 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Server Messages */
 .server-msg-reconnect {
-    border-color: #BDD9BF ;
-    color: #BDD9BF ;
+    border-color: #322B5F ;
+    color: #322B5F ;
 }
 
 .server-msg-disconnect {
-    border-color: #E47792;
-    color: #E47792;
+    border-color: #F15152;
+    color: #F15152;
 }
 
 /* Modals */
 .modal-content {
     color: #000;
-    background: #322B5F;
+    background: #312732;
     border-radius: 0;
     box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
     text-shadow: none;
@@ -598,18 +598,18 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-    background-color: #55678Bc2 !important;
+    background-color: #3A4C7Ac2 !important;
     border-radius: 0;
 }
 
 .modal-body .pagination {
     border-radius: 0;
-    background: #FCBFB7;
+    background: #55678B;
     text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-    background: #FCBFB7;
+    background: #55678B;
     letter-spacing: 2px;
     font-size: 12px;
     color: #000;
@@ -689,43 +689,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     text-align: center;
 }
 
-/* Hearts! */
-.modebutton {
-    float: right;
-    margin-right: 5px !important;
-}
 
-.heartbutton {
-    float: right;
-}
-
-@media (max-width: 768px) {
-    .modebutton, .heartbutton, #hearts {
-        display: none !important;
-    }
-}
-
-#hearts {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    z-index: -1;
-}
-.heart-container {
-    float: left;
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    -moz-animation-duration: 8s;
-    -moz-animation-name: fall;
-    -moz-animation-timing-function: linear;
-    -webkit-animation-duration: 8s;
-    -webkit-animation-name: fall;
-    -webkit-animation-timing-function: linear;
-}
 @-moz-keyframes fall {
     from {
             top: -20px;
@@ -741,26 +705,6 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     to {
             top: 100%;
     }
-}
-.heart {
-    overflow: hidden;
-    height: 30px;
-    width: 30px;
-    font-size: 30px;
-    text-align: center;
-    color: #DD7373;
-    -moz-animation-duration: 0.5s;
-    -moz-animation-name: swing;
-    -moz-animation-timing-function: ease-in-out;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-direction: alternate;
-    -moz-transform-origin: center center;
-    -webkit-animation-duration: 0.5s;
-    -webkit-animation-name: swing;
-    -webkit-animation-timing-function: ease-in-out;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-direction: alternate;
-    -webkit-transform-origin: center center;
 }
 @-moz-keyframes swing {
     from {
