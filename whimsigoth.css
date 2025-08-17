@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motdwrap {
-    background: #181411a8;
+    background: url('/images/starry-bg.jpg') #181411a8;
 }
 
 #motd .day {
