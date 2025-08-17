@@ -30,6 +30,10 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: none;
 }
 
+#wrap {
+    padding-bottom: 30vh;
+}
+
 .navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-text, .navbar-inverse .navbar-brand {
     color: #E5DADA;
 }
@@ -686,7 +690,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Decor */
 .pillow-container {
-    height: 130vh;
+    height: 100vh;
     width: 100vw;
     position: fixed;
     top:0;
@@ -708,6 +712,11 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     right: 0;
 }
 
+.sun-divider {
+    bottom: 0;
+    position: absolute;
+    z-index: -10;
+}
 
 @-moz-keyframes fall {
     from {
