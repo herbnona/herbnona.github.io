@@ -292,11 +292,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #newpollbtn::before {
-    content: '\2713\0020';
+    content: '.𖥔 ݁ ˖\0020';
 }
 
 #emotelistbtn::before {
-    content: '\2765\0020';
+    content: '𓍊𓋼𓍊𓋼𓍊\0020';
 }
 
 /* User Pane */
@@ -689,17 +689,9 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 /* Decor */
-.pillow-container {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top:0;
-    left:0;
-}
-
 .pillows {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     height: 30vh;
     max-height: 300px;
 }
@@ -714,7 +706,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .sun-divider {
     bottom: 0;
-    position: absolute;
+    position: fixed;
     z-index: -10;
 }
 
