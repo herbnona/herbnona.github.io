@@ -22,7 +22,7 @@
 }
 
 body {
-    background: url('backgrounds/whimsigoth-purple.jpg') #312732;
+    background: url('backgrounds/whimsigoth-blue.jpg') #312732;
     cursor: url('cursors/whimsigoth-cow.png'), auto;
 }
 
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-    background: url('/images/starry-bg.jpg') #181411a8 !important;
+    background: transparent !important;
     text-shadow: none;
     text-transform: lowercase;
     letter-spacing: 3px;
@@ -700,6 +700,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     left: 0;
     height: 30vh;
     width: 100vw;
+    z-index: -1;
 }
 
 .pillows {
