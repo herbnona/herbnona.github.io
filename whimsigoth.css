@@ -268,7 +268,6 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     color: #E5DADA;
     letter-spacing: 1px;
     font-size: 13px;
-    filter: hue-rotate(288deg);
 }
 
 .nick-hover {
@@ -693,6 +692,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 /* Decor */
 .sofa {
     background: url('images/sofa.png') repeat-x bottom left;
+    background-size: auto 40vh;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    height: 40vh;
+    width: 100vw;
 }
 
 .pillows {
