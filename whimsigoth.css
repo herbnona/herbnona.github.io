@@ -691,14 +691,14 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Decor */
 .sofa {
-    background: url('images/sofa.png') repeat-x bottom center;
-    background-size: auto 28vh;
+    background: url('images/sofa.png') repeat-x top center;
+    background-size: auto 40vh;
     display: block;
     filter: drop-shadow(2px 4px 6px #111);
     position: fixed;
     bottom: 0;
     left: 0;
-    height: 30vh;
+    height: 27vh;
     width: 100vw;
     z-index: -1;
 }
