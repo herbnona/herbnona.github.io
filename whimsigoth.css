@@ -264,7 +264,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #messagebuffer {
-    background: url('/images/purple-whimsi-bg.jpeg') rgba(0,0,0,.7);
+    background: url('/images/blue-fabric-bg.jpg') rgba(0,0,0,.7);
     color: #E5DADA;
     letter-spacing: 1px;
     font-size: 13px;
@@ -691,6 +691,10 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 /* Decor */
+.sofa {
+    background: url('images/sofa.png') repeat-x bottom left;
+}
+
 .pillows {
     bottom: 0;
     position: fixed;
