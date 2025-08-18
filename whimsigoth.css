@@ -14,7 +14,7 @@
 */
 
 /* Main Styles */
-@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Tsukimi+Rounded&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Tsukimi+Rounded:wght@400;700&display=swap');
 
 * { text-shadow: none !important; }
 
@@ -31,6 +31,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     text-shadow: none;
+    font-family: "Eagle Lake", Georgia, 'Times New Roman', Times, serif;
 }
 
 #wrap {
