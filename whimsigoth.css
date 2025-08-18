@@ -692,11 +692,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 /* Decor */
 .sofa {
     background: url('images/sofa.png') repeat-x bottom left;
-    background-size: auto 40vh;
+    background-size: auto 28vh;
     display: block;
     position: fixed;
     bottom: 0;
-    height: 40vh;
+    left: 0;
+    height: 30vh;
     width: 100vw;
 }
 
