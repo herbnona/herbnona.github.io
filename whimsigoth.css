@@ -14,6 +14,8 @@
 */
 
 /* Main Styles */
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Tsukimi+Rounded&display=swap');
+
 * { text-shadow: none !important; }
 
 @keyframes swing {
@@ -24,6 +26,7 @@
 body {
     background: url('backgrounds/whimsigoth-blue.jpg') #312732;
     cursor: url('cursors/whimsigoth-cow.png'), auto;
+    font-family: "Tsukimi Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,6 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #motdwrap {
     background: url('/images/starry-bg.jpg') #181411a8;
+    font-family: "Eagle Lake", Georgia, 'Times New Roman', Times, serif;
 }
 
 #motd .day {
