@@ -691,9 +691,10 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 /* Decor */
 .sofa {
-    background: url('images/sofa.png') repeat-x bottom left;
+    background: url('images/sofa.png') repeat-x bottom center;
     background-size: auto 28vh;
     display: block;
+    filter: drop-shadow(2px 4px 6px #111);
     position: fixed;
     bottom: 0;
     left: 0;
@@ -702,7 +703,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .pillows {
-    bottom: 0;
+    bottom: -30px;
     position: fixed;
     height: 30vh;
     max-height: 300px;
