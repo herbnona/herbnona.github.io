@@ -5,7 +5,7 @@
 ** #312732 - raisin black - background, emote popup, notifs
 ** #F15152 - imperial red - disconnect
 ** #E5DADA - timberwolf - chat text and pane text
-** #55678B - earth yellow - buttons
+** #E6AA60 - earth yellow - buttons
 ** #3A4C7A - ylnmn blue - control buttons 
 ** #8788B2 - cool gray - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #footer {
-    background: #181411d9 !important;
+    background: url('/images/starry-bg.jpg') #181411a8 !important;
     text-shadow: none;
     text-transform: lowercase;
     letter-spacing: 3px;
@@ -168,7 +168,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 /* Buttons */
 .btn {
     appearance: button;
-    background-color: #55678B;
+    background-color: #E6AA60;
     background-image: none;
     border: 1px solid #000;
     border-radius: 4px;
@@ -195,7 +195,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:focus {
-    background-color: #55678B;
+    background-color: #E6AA60;
     color: #000;
     outline: 0;
     text-decoration: none;
@@ -210,7 +210,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .btn:active, .btn-default.active, .btn-default.focus, .btn-default:active, .btn-default:focus, .open>.dropdown-toggle.btn-default {
-    background-color: #55678B;
+    background-color: #E6AA60;
     border: 1px solid #000;
     box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
     color: #000;
@@ -264,10 +264,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #messagebuffer {
-    background: rgba(0,0,0,.7);
+    background: url('/images/purple-whimsi-bg.jpeg') rgba(0,0,0,.7);
     color: #E5DADA;
     letter-spacing: 1px;
     font-size: 13px;
+    filter: hue-rotate(288deg);
 }
 
 .nick-hover {
@@ -301,7 +302,8 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* User Pane */
 #userlist {
-    background: rgba(0,0,0,.4);
+    background: url('/images/purple-whimsi-bg.jpeg') rgba(0,0,0,.4);
+    filter: hue-rotate(250deg);
 }
 
 .userlist_item {
@@ -506,7 +508,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* Polls */
 .poll-notify {
-    color: #55678B;
+    color: #E6AA60;
     font-size: 14px;
     padding: 5px;
     margin: 5px 0px;
@@ -603,12 +605,12 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 
 .modal-body .pagination {
     border-radius: 0;
-    background: #55678B;
+    background: #E6AA60;
     text-shadow: none;
 }
 
 .modal-body .pagination>li>a, .modal-body .pagination>li>span {
-    background: #55678B;
+    background: #E6AA60;
     letter-spacing: 2px;
     font-size: 12px;
     color: #000;
@@ -694,6 +696,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     position: fixed;
     height: 30vh;
     max-height: 300px;
+    filter: drop-shadow(6px 4px 6px black);
 }
 
 .pillows-left {
@@ -705,7 +708,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .sun-divider {
-    bottom: 0;
+    bottom: 40px;
     position: fixed;
     z-index: -10;
 }
