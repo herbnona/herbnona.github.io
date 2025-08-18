@@ -89,6 +89,7 @@ var newthemeSelect = [
     ["Summer Nights - Summer Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/summernights.css"],
     ["Age of Aquarium", "/css/themes/slate.css", "https://herbnona.github.io/age-of-aquarium.css"],
     ["Eurovision Mode", "/css/themes/slate.css", "https://herbnona.github.io/eurovisionmode.css"],
+    ["Whimsical Medieval", "/css/themes/slate.css", "https://herbnona.github.io/whimsidieval.css"],
     ["Moomin Autumn", "/css/themes/slate.css", "https://herbnona.github.io/autumn.css"],
     ["Halloween", "/css/themes/slate.css", "https://herbnona.github.io/halloween.css"],
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],

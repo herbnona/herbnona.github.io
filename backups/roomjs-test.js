@@ -83,7 +83,7 @@ var newthemeSelect = [
     ["Summer Nights - Summer Dark Mode", "/css/themes/slate.css", "https://herbnona.github.io/summernights.css"],
     ["Age of Aquarium", "/css/themes/slate.css", "https://herbnona.github.io/age-of-aquarium.css"],
     ["Eurovision Mode", "/css/themes/slate.css", "https://herbnona.github.io/eurovisionmode.css"],
-    ["Whimsigoth Autumn", "/css/themes/slate.css", "https://herbnona.github.io/whimsigoth.css"],
+    ["Whimsical Medieval", "/css/themes/slate.css", "https://herbnona.github.io/whimsidieval.css"],
     ["Moomin Autumn", "/css/themes/slate.css", "https://herbnona.github.io/autumn.css"],
     ["Halloween", "/css/themes/slate.css", "https://herbnona.github.io/halloween.css"],
     ["Battyween", "/css/themes/slate.css", "https://herbnona.github.io/battyween.css"],
@@ -119,8 +119,8 @@ function styleCookieCheck() {
         let stylecookie = getCookie('customtheme');
         swapStyleSheet(stylecookie);
     } else {
-        swapStyleSheet('https://herbnona.github.io/whimsigoth.css');
-        setCookie('customtheme', 'https://herbnona.github.io/whimsigoth.css', 30);
+        swapStyleSheet('https://herbnona.github.io/whimsidieval.css');
+        setCookie('customtheme', 'https://herbnona.github.io/whimsidieval.css', 30);
     }
 }
 
