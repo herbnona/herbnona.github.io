@@ -681,6 +681,15 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     background: #252046; 
 }
 
+.pm-input {
+    background: rgba(0,0,0,.8) !important;
+    border-color: #231A20;
+    border-top: none;
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 13px;
+}
+
 /* Image Popup */
 #image-popup {
     position: fixed;
