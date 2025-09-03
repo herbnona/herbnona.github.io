@@ -672,7 +672,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     width: 350px;
 }
 
-.panel-heading {
+.panel-heading, .panel-default>.panel-heading {
     background: #3A4C7A;
     color: #E5DADA;
 }
