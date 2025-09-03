@@ -117,7 +117,12 @@ function swapStyleSheet(sheet) {
 function styleCookieCheck() {
     if (document.cookie.indexOf('customtheme') > -1) {
         let stylecookie = getCookie('customtheme');
-        swapStyleSheet(stylecookie);
+        if (stylecookie == 'https://herbnona.github.io/age-of-aquarium.css') {
+            swapStyleSheet('https://herbnona.github.io/whimsidieval.css');
+            setCookie('customtheme', 'https://herbnona.github.io/whimsidieval.css', 30);
+        } else {
+            swapStyleSheet(stylecookie);
+        }
     } else {
         swapStyleSheet('https://herbnona.github.io/whimsidieval.css');
         setCookie('customtheme', 'https://herbnona.github.io/whimsidieval.css', 30);
@@ -281,7 +286,9 @@ function prepareMessage(msg) {
             msg='Tunesday playlists are saved here: https://moovieroom.github.io/tunesday-playlists';	
         } else if (msg.indexOf("!blocked") == 0) {	
             msg='`' + $(".queue_active a").html() + '`' + ' is region blocked. Host: please skip this video. ' + $(".queue_active").attr('title').replace('Added by: ','') + ', please find an alternate video link if possible.';	
-        } else {	
+        } else if (msg.indexOf("!gysts") == 0) {	
+            msg='GYSTS Resources: https://moovieroom.github.io/gysts';        }
+        else {	
             COMMAND=false;	
         }	
     }
