@@ -365,7 +365,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry {
-    background: rgba(0,0,0,.4);
+    background: rgba(0,0,0,.7);
     border-color: rgba(0,0,0,.8);
     padding: 0px 8px 8px;
 }
