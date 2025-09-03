@@ -667,6 +667,20 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
     background: rgba(255,255,255,.07); 
 }
 
+/* DMs */
+.pm-panel {
+    width: 350px;
+}
+
+.panel-heading {
+    background: #3A4C7A;
+    color: #E5DADA;
+}
+
+.panel-body {
+    background: #252046; 
+}
+
 /* Image Popup */
 #image-popup {
     position: fixed;
