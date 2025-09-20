@@ -722,27 +722,11 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 /* fun bits! */
-.modebutton {
-    float: right;
-    margin-right: 5px !important;
-}
-.cafebg {
-    position:fixed;
-    bottom:0;
-    left:0;
-    height:100vh;
-    width:100vw;
-    min-width:600px;
-    z-index:-10;
-}
-
-#background-wrap {
-    bottom: 0;
-	left: 0;
-	position: fixed;
-	right: 0;
-	top: 0;
-	z-index: -1;
+.wisp {
+    position: fixed;
+    animation: 30s swimbyotherway linear infinite;
+    opacity: .8;
+    z-index: -1;
 }
 
 /* KEYFRAMES */
