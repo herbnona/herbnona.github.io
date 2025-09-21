@@ -82,6 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #motdwrap {
     font-family: "Marhey", sans-serif;
+    border: none;
 }
 
 #motd .day {
@@ -96,8 +97,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motd .regularMOTD {
-    background: url('/backgrounds/purple-goo.png') #110015a8;
-    border: none;
+    background: url('/backgrounds/old-tv.gif');
+    background-size: 100% auto;
+    max-width: 648px;
+    max-height: 610px;
+    margin: 0 auto;
+    padding: 100px 100px;
 }
 
 @media (max-width: 768px) {
@@ -118,7 +123,8 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 8px;
-    background: #75108B;
+    background: url(backgrounds/purple-goo.png) #75108B;
+    background-size: 33%;
     color: #b8d14b;
     letter-spacing: 2px;
     font-size: 13px;
