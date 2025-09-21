@@ -6,7 +6,7 @@
 ** #F15152 - imperial red - disconnect
 ** #b8d14b - yellow green - chat text and pane text
 ** #FF7037 - orange crayola - buttons
-** #A3306F - magenta haze - control buttons 
+** #75108B - purple - control buttons 
 ** #8788B2 - cool gray - reconnect, button hovers, and default username
 ** #F8FAF0 - eerie black - modal text
 ** #110015 - licorice - transparent backgrounds
@@ -25,7 +25,7 @@
 
 body {
     background: url('backgrounds/whimsigoth-blue.jpg') #312732;
-    cursor: url('cursors/whimsigoth-cow.png'), auto;
+    cursor: url('cursors/ghost-cookie.png'), auto;
     font-family: "Sour Gummy", sans-serif;
 }
 
@@ -116,7 +116,7 @@ h1, h2, h3, h4, h5, h6 {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     padding: 8px;
-    background: #A3306F;
+    background: #75108B;
     color: #b8d14b;
     letter-spacing: 2px;
     font-size: 13px;
@@ -397,7 +397,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .queue_entry.queue_active .btn {
-    background: #A3306F !important;
+    background: #75108B !important;
 }
 
 .videolist {
@@ -416,13 +416,13 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
     font-size: 10px;
     border-radius: 0px;
     border: 0px;
-    background: #A3306F !important;
+    background: #75108B !important;
     box-shadow: 0px 0px 0px;
     color: #b8d14b;
 }
 
 .videolist .btn:hover, .videolist .btn:focus {
-    background: #A3306F !important;
+    background: #75108B !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px;
@@ -431,7 +431,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }    
 
 .videolist .btn:active, .videolist .btn.active.focus, .videolist .btn.active:focus, .videolist .btn.focus, .videolist .btn:active.focus, .videolist .btn:active:focus, .videolist .btn:focus {
-    background: #A3306F    !important;
+    background: #75108B    !important;
     border-color: #000;
     color: #fff;
     box-shadow: 0px 0px 0px 0px;
@@ -445,7 +445,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #rightpane-inner input.form-control[type="text"] {
-    background-color: #A3306F8a !important;
+    background-color: #75108B8a !important;
     border-radius: 0;
     border-color: rgba(0,0,0,.8);
     color: rgba(225,225,225,.8);
@@ -545,7 +545,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #pollwrap .label-default {
-    background: #A3306F96;
+    background: #75108B96;
 }
 
 input.form-control[type="text"], input.form-control[type="password"], input.form-control[type="email"], textarea.form-control {
@@ -603,7 +603,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .modal-body input.form-control[type="text"] {
-    background-color: #A3306Fc2 !important;
+    background-color: #75108Bc2 !important;
     border-radius: 0;
 }
 
@@ -673,7 +673,7 @@ input.form-control[type="text"], input.form-control[type="password"], input.form
 }
 
 .panel-heading, .panel-default>.panel-heading {
-    background: #A3306F;
+    background: #75108B;
     color: #b8d14b;
 }
 
