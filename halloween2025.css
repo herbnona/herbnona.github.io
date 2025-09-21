@@ -24,7 +24,9 @@
 }
 
 body {
-    background: url('backgrounds/whimsigoth-blue.jpg') #312732;
+    background: url('backgrounds/halloween-wall.gif') #312732 repeat-y fixed;
+    background-size: auto 100vh;
+    background-position-y:50px;
     cursor: url('cursors/ghost-cookie.png'), auto;
     font-family: "Sour Gummy", sans-serif;
 }
@@ -79,7 +81,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motdwrap {
-    background: url('/backgrounds/purple-goo.png') #110015a8;
     font-family: "Marhey", sans-serif;
 }
 
@@ -94,8 +95,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 2em;
 }
 
-#motd .dollz {
-    filter: saturate(0.8);
+#motd .regularMOTD {
+    background: url('/backgrounds/purple-goo.png') #110015a8;
+    border: none;
 }
 
 @media (max-width: 768px) {
