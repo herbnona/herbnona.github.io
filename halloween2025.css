@@ -79,8 +79,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #motdwrap {
-    background: url('/images/starry-bg.jpg') #110015a8;
-    font-family: "Eagle Lake", Georgia, 'Times New Roman', Times, serif;
+    background: url('/backgrounds/purple-goo.png') #110015a8;
+    font-family: "Marhey", sans-serif;
 }
 
 #motd .day {
@@ -269,7 +269,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #messagebuffer {
-    background: url('/images/blue-fabric-bg.jpg') rgba(0,0,0,.7);
+    background: url('/backgrounds/bat-chat-pane.png') rgba(0,0,0,.7);
     color: #b8d14b;
     letter-spacing: 1px;
     font-size: 13px;
@@ -297,16 +297,16 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 #newpollbtn::before {
-    content: '.𖥔 ݁ ˖\0020';
+    content: '⁺‧₊˚\0020';
 }
 
 #emotelistbtn::before {
-    content: '𓍊𓋼𓍊𓋼𓍊\0020';
+    content: 'ˣ෴ˣ\0020';
 }
 
 /* User Pane */
 #userlist {
-    background: url('/images/purple-whimsi-bg.jpeg') rgba(0,0,0,.4);
+    background: url('/backgrounds/skeleton-name-pane.png') rgba(0,0,0,.4);
     filter: hue-rotate(250deg);
 }
 
@@ -323,11 +323,11 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .userlist_owner::before {
-    content: '\02764\0020';
+    content: '\1F480\0020';
 }
 
 .userlist_op::before {
-    content: '\0273F\0020';
+    content: '\1F383\0020';
 }
 
 .userlist_guest {
@@ -521,7 +521,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 }
 
 .poll-notify::before {
-    content: '\2601\0020';
+    content: '⋆°🕯️\0020';
 }
 
 #pollwrap {
