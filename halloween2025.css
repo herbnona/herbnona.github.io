@@ -107,8 +107,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 768px) {
-    .nowshowing, .comingsoon {
+    .nowshowing, .comingsoon, .have-fun {
         display: none !important;
+    }
+
+    .tv {
+        height: 78vw !important;
+        width: 90vw !important;
+    }
+
+    .tv-screen {
+        height: 55vw !important;
     }
 }
   
