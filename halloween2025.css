@@ -324,7 +324,7 @@ input.form-control[type="text"]::-ms-input-placeholder { /* Microsoft Edge */
 
 /* User Pane */
 #userlist {
-    background: url('/backgrounds/skeleton-name-pane.png') rgba(0,0,0,.4);
+    background: url('/backgrounds/skeleton-name-pane-grey.png') rgba(0,0,0,.4);
     filter: hue-rotate(250deg);
 }
 
